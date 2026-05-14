@@ -1,0 +1,10 @@
+title: CarVerge
+description: EV and modern automotive guides and reviews
+theme: minima
+baseurl: ""
+url: "https://carverge.io"
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+show_excerpts: true
+minima:
+  skin: dark
