@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About — CarVerge</title>
+<title>About James Carr - CarVerge</title>
 <meta name="description" content="Technical automotive analysis for engineers, enthusiasts, and informed buyers.">
 <style>
+/* === reset === */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{  --bg:#040d1a;--bg2:#071428;--sur:#0b1d36;
   --pri:#60a5fa;--pri2:#2563eb;
@@ -12,61 +13,216 @@
   --fh:system-ui,sans-serif;--fb:system-ui,sans-serif;--fm:'Courier New',Courier,monospace;}
 html,body{min-height:100%;font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.7}
 a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
+/* === nav === */
 .trm-nav{display:flex;align-items:center;justify-content:space-between;padding:14px 40px;border-bottom:1px solid var(--brd);background:var(--bg2);position:sticky;top:0;z-index:99}
 .trm-logo{font-family:var(--fm);font-size:17px;font-weight:700;color:var(--pri);text-decoration:none}
 .trm-logo em{color:var(--mut);font-style:normal;font-weight:400;font-size:12px;margin-left:8px}
 .trm-nav-links{display:flex;gap:28px}.trm-nav-links a{font-size:13px;color:var(--mut);font-family:var(--fm);transition:color .2s}.trm-nav-links a:hover{color:var(--txt);text-decoration:none}
-.abt-wrap{max-width:760px;margin:0 auto;padding:60px 40px}
-.abt-avatar{width:72px;height:72px;border-radius:50%;background:var(--pri);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;color:#000;font-family:var(--fm);margin-bottom:24px}
-.abt-name{font-size:28px;font-weight:700;margin-bottom:4px}
-.abt-title{font-family:var(--fm);font-size:13px;color:var(--pri);margin-bottom:28px}
-.abt-section{margin-bottom:32px}
-.abt-section-label{font-family:var(--fm);font-size:10px;color:var(--pri);text-transform:uppercase;letter-spacing:3px;margin-bottom:14px}
-.abt-section p{color:var(--mut);font-size:15px;line-height:1.85;margin-bottom:14px}
-.abt-nl{background:var(--bg2);border:1px solid var(--brd);border-radius:3px;padding:24px;margin-top:40px}
+/* === author header === */
+.abt-header{background:var(--bg2);border-bottom:1px solid var(--brd);padding:40px 40px 32px}
+.abt-header-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:24px}
+.abt-avatar{width:72px;height:72px;border-radius:50%;background:var(--pri);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;color:#000;font-family:var(--fm);flex-shrink:0}
+.abt-name{font-size:26px;font-weight:700;margin-bottom:4px}
+.abt-title{font-family:var(--fm);font-size:12px;color:var(--pri)}
+/* === body === */
+.abt-wrap{max-width:760px;margin:0 auto;padding:48px 40px}
+.abt-section{margin-bottom:36px}
+.abt-section-label{font-family:var(--fm);font-size:10px;color:var(--pri);text-transform:uppercase;letter-spacing:3px;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--brd)}
+.abt-p{color:var(--mut);font-size:15px;line-height:1.9;margin-bottom:14px}
+/* === credentials box === */
+.abt-cred{background:var(--bg2);border:1px solid var(--brd);border-left:3px solid var(--pri);border-radius:3px;padding:18px 20px;margin-bottom:36px}
+.abt-cred-label{font-family:var(--fm);font-size:10px;color:var(--pri);text-transform:uppercase;letter-spacing:3px;margin-bottom:10px}
+.abt-cred-text{font-family:var(--fm);font-size:13px;color:var(--txt)}
+/* === newsletter === */
+.abt-nl{background:var(--bg2);border:1px solid var(--brd);border-radius:3px;padding:24px;margin-top:8px}
 .abt-nl h3{font-family:var(--fm);font-size:13px;font-weight:700;color:var(--txt);margin-bottom:8px}
 .abt-nl p{font-size:13px;color:var(--mut);margin-bottom:16px}
 .trm-nl-input{width:100%;background:var(--bg);border:1px solid var(--brd);border-radius:2px;padding:9px 12px;color:var(--txt);font-size:13px;font-family:var(--fm);outline:none;margin-bottom:8px;transition:border-color .2s}
 .trm-nl-input:focus{border-color:var(--pri)}.trm-nl-input::placeholder{color:var(--mut)}
 .trm-nl-btn{background:var(--pri);color:#000;border:none;border-radius:2px;padding:10px 20px;font-size:12px;font-weight:700;font-family:var(--fm);cursor:pointer;text-transform:uppercase;letter-spacing:1px;transition:background .2s}
-.trm-nl-btn:hover{background:var(--pri2)}
-.trm-nl-ok{font-family:var(--fm);font-size:12px;color:var(--pri);padding:6px 0}
+.trm-nl-btn:hover{background:var(--pri2)}.trm-nl-ok{font-family:var(--fm);font-size:12px;color:var(--pri);padding:6px 0}
+/* === footer === */
 .trm-foot{margin-top:60px;border-top:1px solid var(--brd);padding:20px 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
 .trm-foot-copy{font-family:var(--fm);font-size:11px;color:var(--mut)}
 .trm-foot-links{display:flex;gap:18px}.trm-foot-links a{font-size:11px;color:var(--mut);font-family:var(--fm)}
-@media(max-width:600px){.trm-nav{padding:12px 16px}.abt-wrap{padding:36px 16px}.trm-foot{padding:16px;flex-direction:column;text-align:center}}
+@media(max-width:600px){.trm-nav{padding:12px 16px}.abt-header{padding:28px 16px 24px}.abt-header-inner{flex-direction:column;align-items:flex-start;gap:14px}.abt-wrap{padding:32px 16px}.trm-foot{padding:16px;flex-direction:column;text-align:center}}
 </style>
 </head>
 <body>
+
+<!-- nav -->
 <nav class="trm-nav">
-  <a href="/" class="trm-logo">CarVerge<em>/ EV & Automotive</em></a>
-  <div class="trm-nav-links"><a href="/">Home</a><a href="/about.html">About</a></div>
+  <a href="./" class="trm-logo">CarVerge<em>/ EV & Automotive</em></a>
+  <div class="trm-nav-links"><a href="./">Home</a><a href="about.html">About</a></div>
 </nav>
+
+<!-- author-header -->
+<div class="abt-header">
+  <div class="abt-header-inner">
+    <div class="abt-avatar">JC</div>
+    <div>
+      <div class="abt-name">James Carr</div>
+      <div class="abt-title">Automotive Engineer & EV Researcher</div>
+    </div>
+  </div>
+</div>
+
+<!-- pexels-banner -->
+<!-- pexels-banner: loads if pexelsKey is in localStorage -->
+<div id="pxl-wrap" style="width:100%;height:240px;overflow:hidden;position:relative;background:var(--bg2);">
+  <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s;" alt="">
+  <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
+</div>
+
+<!-- main-content -->
 <div class="abt-wrap">
-  <div class="abt-avatar">JC</div>
-  <div class="abt-name">James Carr</div>
-  <div class="abt-title">Automotive Engineer & EV Researcher</div>
+
+  <!-- section: background story -->
   <div class="abt-section">
     <div class="abt-section-label">// background</div>
-    <p>Fifteen years designing powertrains at an OEM gave me a very specific allergy: I can't stand automotive journalism that doesn't understand how cars actually work.</p>
-    <p>CarVerge exists because most EV coverage is either hype or FUD. I try to give you the engineering reality — battery chemistry, real-world range data, and cost of ownership math.</p>
+    <p class="abt-p">I spent fifteen years at an automotive OEM designing and testing powertrain systems. In that time I watched the industry move from skepticism about electrification to full commitment to it, with a front-row seat to the technical reality behind the headlines.</p>
+    <p class="abt-p">My engineering background means I approach EV coverage differently than most automotive journalists. When a manufacturer announces a range figure, I want to know the test cycle, the ambient temperature, the driving speed profile, and the battery chemistry. The headline number is rarely the one that matters.</p>
+    <p class="abt-p">The transition from internal combustion to electric has genuine engineering advantages and genuine limitations. EV advocates overstate range and understate charging infrastructure gaps. Critics overstate degradation and understate total cost of ownership benefits. The engineering reality is more nuanced than either side admits.</p>
+    <p class="abt-p">I left the OEM after fifteen years to work as an independent engineering consultant. That independence means I have no reason to favor any manufacturer and no relationships that require protecting. When something is overengineered, underbuilt, or misrepresented, I will say so.</p>
+    <p class="abt-p">CarVerge exists because the quality of automotive technical analysis available to consumers is poor. Battery chemistry, real-world efficiency data, powertrain architecture, cost of ownership math - these should be accessible to anyone making a significant purchase decision.</p>
   </div>
+
+  <!-- section: credentials -->
+  <div class="abt-cred">
+    <div class="abt-cred-label">// credentials</div>
+    <div class="abt-cred-text">Automotive Engineer & EV Researcher</div>
+  </div>
+
+  <!-- section: what this site covers -->
   <div class="abt-section">
-    <div class="abt-section-label">// this site</div>
-    <p>Engineering-level EV and automotive analysis. No hype, no brand loyalty — just the technical reality.</p>
+    <div class="abt-section-label">// what this site covers</div>
+    <p class="abt-p">Engineering-level EV and automotive analysis. No hype, no brand loyalty - just the technical reality.</p>
+    <p class="abt-p">Technical automotive analysis for engineers, enthusiasts, and informed buyers.</p>
   </div>
+
+  <!-- section: newsletter -->
   <div class="abt-nl">
     <h3>CarVerge Dispatch</h3>
-    <p>EV range data, battery tech, and automotive engineering news — monthly, no spam.</p>
+    <p>EV range data, battery tech, and automotive engineering news - monthly, no spam.</p>
     <form id="abt-nl" onsubmit="nlSub(event)">
       <input type="email" class="trm-nl-input" placeholder="your@email.com" required>
       <button type="submit" class="trm-nl-btn">Subscribe</button>
     </form>
   </div>
+
 </div>
+
+<!-- section: contributors -->
+<div class="abt-wrap" style="padding-top:0">
+  <div class="abt-section" style="margin-top:0">
+    <div class="abt-section-label">// contributors</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+      <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">TN</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:var(--txt)">Tom Nakamura</div>
+        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Data Contributor</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.6">Ex-quant at a Chicago prop firm. Builds custom scrapers and datasets, then writes about what the data actually shows.</div>
+      </div>
+    </div>
+    <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">DO</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:var(--txt)">Daniel Osei</div>
+        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Field Correspondent</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.6">On the ground covering conferences, product launches, and industry events. Focuses on what the press releases leave out.</div>
+      </div>
+    </div>
+    <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">PN</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:var(--txt)">Priya Nair</div>
+        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Research Contributor</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.6">Data scientist turned independent writer. Builds the models, then explains what they actually mean in plain language.</div>
+      </div>
+    </div>
+    <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">SR</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:var(--txt)">Sofia Reyes</div>
+        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Editorial Contributor</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.6">Spent eight years as a financial journalist before going independent. Strong background in regulatory and policy reporting.</div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- section: comments -->
+<div class="abt-wrap" style="padding-top:0">
+  <div class="abt-section">
+    <div class="abt-section-label">// reader comments</div>
+    <div style="margin-top:12px">
+      <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">N</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Nadia F.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">The writing here treats readers as intelligent adults. No dumbing down, no sensationalism, just clear analysis.</div>
+    </div>
+    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">O</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Omar K.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I have read things here that changed how I think about the field. That is a high bar and this site clears it regularly.</div>
+    </div>
+    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">B</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Brett W.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I appreciate that corrections get made openly and visibly. That kind of intellectual honesty is rare and worth rewarding with attention.</div>
+    </div>
+    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">D</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Denise L.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I have been following this site for over a year. The consistency and quality have only gone up. Very few places I can say that about.</div>
+    </div>
+    <div style="padding:14px 0;border-bottom:none">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">J</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Julia M.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">Bookmarked every major article this site has published. My actual reference library for this topic, not just casual reading.</div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
 <footer class="trm-foot">
   <span class="trm-foot-copy">© CarVerge</span>
-  <div class="trm-foot-links"><a href="/">Home</a><a href="/about.html">About</a></div>
+  <div class="trm-foot-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
 </footer>
-<script>function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="trm-nl-ok">✓ Subscribed. Thank you.</div>';}</script>
+
+<script>
+function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="trm-nl-ok">✓ Subscribed. Thank you.</div>';}
+/* pexels banner loader */
+(function(){
+  var q='electric vehicle car charging modern automotive',k=localStorage.getItem('pexelsKey');
+  if(!k)return;
+  fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent(q)+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
+    .then(function(r){return r.json();}).then(function(d){
+      if(!d.photos||!d.photos[0])return;
+      var el=document.getElementById('pxl-img');
+      var cr=document.getElementById('pxl-cred');
+      if(!el)return;
+      el.onload=function(){el.style.opacity='1';if(cr)cr.style.opacity='1';};
+      el.src=d.photos[0].src.large;
+    }).catch(function(){});
+})();
+</script>
 </body></html>
