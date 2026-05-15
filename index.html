@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CarVerge — EV & Automotive Engineering Explained</title>
-<meta name="description" content="Engineering-level EV and automotive analysis. No hype, no brand loyalty — just the technical reality.">
+<title>CarVerge - EV & Automotive Engineering Explained</title>
+<meta name="description" content="Engineering-level EV and automotive analysis. No hype, no brand loyalty - just the technical reality.">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{  --bg:#040d1a;--bg2:#071428;--sur:#0b1d36;
@@ -49,30 +49,46 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
+
+<!-- nav -->
 <nav class="trm-nav">
-  <a href="/" class="trm-logo">CarVerge<em>/ EV & Automotive</em></a>
-  <div class="trm-nav-links"><a href="/">Home</a><a href="/about.html">About</a></div>
+  <a href="./" class="trm-logo">CarVerge<em>/ EV & Automotive</em></a>
+  <div class="trm-nav-links"><a href="./">Home</a><a href="about.html">About</a></div>
 </nav>
+
+<!-- hero -->
 <div class="trm-hero">
   <div class="trm-hero-cat">EV & Automotive</div>
   <h1>EV & Automotive Engineering Explained</h1>
-  <p>Engineering-level EV and automotive analysis. No hype, no brand loyalty — just the technical reality.</p>
+  <p>Engineering-level EV and automotive analysis. No hype, no brand loyalty - just the technical reality.</p>
 </div>
+
+<!-- pexels-banner -->
+<!-- pexels-banner: loads if pexelsKey is in localStorage -->
+<div id="pxl-wrap" style="width:100%;height:200px;overflow:hidden;position:relative;background:var(--bg2);">
+  <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s;" alt="">
+  <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
+</div>
+
+<!-- articles + sidebar -->
 <div class="trm-body">
   <main>
+    <!-- feed -->
     <div class="trm-feed-hd">// latest articles</div>
     <div id="trm-feed"></div>
   </main>
   <aside>
+    <!-- author-teaser -->
     <div class="trm-aside-box">
       <div class="trm-aside-hd">About</div>
       <p><strong>James Carr</strong><br>Automotive Engineer & EV Researcher</p>
-      <p>Fifteen years designing powertrains at an OEM gave me a very specific allergy: I can't stand automotive journalism that …</p>
-      <p><a href="/about.html">Full bio →</a></p>
+      <p>Fifteen years designing powertrains at an OEM gave me a very specific allergy: I can't stand automotive journalism that ...</p>
+      <p><a href="about.html">Full bio →</a></p>
     </div>
+    <!-- newsletter -->
     <div class="trm-aside-box">
       <div class="trm-aside-hd">Newsletter</div>
-      <p>EV range data, battery tech, and automotive engineering news — monthly, no spam.</p>
+      <p>EV range data, battery tech, and automotive engineering news - monthly, no spam.</p>
       <form id="trm-nl" onsubmit="nlSub(event)">
         <input type="email" class="trm-nl-input" placeholder="your@email.com" required>
         <button type="submit" class="trm-nl-btn">Subscribe</button>
@@ -80,11 +96,15 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
     </div>
   </aside>
 </div>
+
+<!-- footer -->
 <footer class="trm-foot">
-  <span class="trm-foot-copy">© CarVerge — Technical automotive analysis for engineers, enthusiasts, and informed buyers.</span>
-  <div class="trm-foot-links"><a href="/">Home</a><a href="/about.html">About</a></div>
+  <span class="trm-foot-copy">© CarVerge - Technical automotive analysis for engineers, enthusiasts, and informed buyers.</span>
+  <div class="trm-foot-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
 </footer>
+
 <script>
+/* load articles feed */
 async function loadPosts(){
   const el=document.getElementById('trm-feed');
   try{
@@ -94,13 +114,27 @@ async function loadPosts(){
       <div class="trm-post-meta"><span class="trm-post-cat">EV & Automotive</span><span>${p.date_iso||''}</span><span>${p.author||'James Carr'}</span></div>
       <h2>${p.title}</h2>
       <p>${p.meta_description||''}</p>
-      <a class="trm-post-link" href="./${p.slug||'#'}">read more →</a>
+      <a class="trm-post-link" href="./${p.slug||'#'}/">read more →</a>
     </div>`).join('');
   }catch(e){
-    el.innerHTML='<div class="trm-post"><div class="trm-post-meta"><span class="trm-post-cat">Coming Soon</span></div><h2>First articles publishing soon</h2><p>Check back shortly — the bot is warming up.</p></div>';
+    el.innerHTML='<div class="trm-post"><div class="trm-post-meta"><span class="trm-post-cat">Coming Soon</span></div><h2>First articles publishing soon</h2><p>Check back shortly - the bot is warming up.</p></div>';
   }
 }
 function nlSub(e){e.preventDefault();document.getElementById('trm-nl').innerHTML='<div class="trm-nl-ok">✓ You're subscribed. Welcome.</div>';}
 loadPosts();
+/* pexels banner loader */
+(function(){
+  var q='electric vehicle car charging modern automotive',k=localStorage.getItem('pexelsKey');
+  if(!k)return;
+  fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent(q)+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
+    .then(function(r){return r.json();}).then(function(d){
+      if(!d.photos||!d.photos[0])return;
+      var el=document.getElementById('pxl-img');
+      var cr=document.getElementById('pxl-cred');
+      if(!el)return;
+      el.onload=function(){el.style.opacity='1';if(cr)cr.style.opacity='1';};
+      el.src=d.photos[0].src.large;
+    }).catch(function(){});
+})();
 </script>
 </body></html>
