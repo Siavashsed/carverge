@@ -280,10 +280,8 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:60px 40p
 @media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr};footer{padding:48px 24px 24px}}
 @media(max-width:540px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
 
-/* Three.js canvas overlay */
-#hero-canvas{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.55}
+
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 </head>
 <body>
 
@@ -309,7 +307,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:60px 40p
 
 <!-- HERO -->
 <div class="hero">
-  <canvas id="hero-canvas"></canvas>
   <div class="hero-bg">
     <img src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Modern sports car" loading="eager" onerror="this.style.display='none'">
   </div>
@@ -586,99 +583,39 @@ async function loadArticles() {
     }
     renderArtsGrid();
   } catch(e) {
-    // Show fallback state
+    const PLACEHOLDER = [
+      {slug:'ev-battery-chemistry-explained',category:'Battery',title:'EV Battery Chemistry Explained: NMC vs LFP vs Solid-State',date:'May 12, 2026',image:'https://images.pexels.com/photos/110844/pexels-photo-110844.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'A deep-dive into the electrochemistry behind modern EV batteries - energy density trade-offs, thermal management, and what solid-state means for range.',author:'J. Carver'},
+      {slug:'tesla-model-y-range-real-world',category:'EV',title:'Tesla Model Y Real-World Range: 12 Months of Data',date:'May 8, 2026',image:'https://images.pexels.com/photos/3786091/pexels-photo-3786091.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'We tracked every charge cycle for a year. The EPA number, the variance by season, and the degradation curve you should actually plan around.',author:'J. Carver'},
+      {slug:'ev-charging-infrastructure-2026',category:'EV',title:'Charging Infrastructure in 2026: Where the Gaps Still Are',date:'May 3, 2026',image:'https://images.pexels.com/photos/163210/engine-motor-machine-mechanic-163210.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'DCFC rollout has accelerated - but rural corridors and apartment charging still lag badly. Data-driven look at what changed and what did not.',author:'J. Carver'},
+      {slug:'hybrid-vs-phev-cost-analysis',category:'Hybrid',title:'Hybrid vs PHEV: The Honest Cost-of-Ownership Math',date:'Apr 28, 2026',image:'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'We ran the numbers across 10 years, 150k miles, varying electricity prices. The answer depends heavily on how you actually drive.',author:'J. Carver'},
+      {slug:'ev-thermal-management-deep-dive',category:'Battery',title:'Thermal Management: Why Your EV Battery Loses Range in Winter',date:'Apr 22, 2026',image:'https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'The electrochemistry of lithium-ion performance below 0C, what heat pumps actually fix, and which architectures handle cold weather best.',author:'J. Carver'},
+      {slug:'rivian-r1t-engineering-review',category:'EV',title:'Rivian R1T Engineering Review: What the Specs Miss',date:'Apr 15, 2026',image:'https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:"The quad-motor torque vectoring, the frunk aerodynamics, and the structural battery pack - what Rivian got right and where they cut corners.",author:'J. Carver'},
+    ];
+    allArts = PLACEHOLDER;
     const grid = document.getElementById('feat-grid');
-    if (grid) grid.innerHTML = '<div style="grid-column:1/-1;padding:60px;text-align:center;color:var(--muted);font-family:var(--mono);font-size:13px;background:var(--surface)">Articles loading - check back shortly.</div>';
-    const agrid = document.getElementById('arts-grid');
-    if (agrid) agrid.innerHTML = '<div style="grid-column:1/-1;padding:60px;text-align:center;color:var(--muted);font-family:var(--mono);font-size:13px">No articles published yet.</div>';
+    if (grid) {
+      const main = PLACEHOLDER[0];
+      const subs = PLACEHOLDER.slice(1,3);
+      grid.innerHTML = `
+        <a href="./${main.slug}/" class="feat-main">
+          <img class="feat-main-img" src="${main.image}" alt="${main.title}" loading="lazy" onerror="this.style.cssText='background:var(--surface2)'">
+          <div class="feat-main-overlay"></div>
+          <div class="feat-main-body">
+            <div class="feat-tag">${main.category}</div>
+            <div class="feat-title">${main.title}</div>
+            <div class="feat-desc">${main.meta_description.slice(0,130)}</div>
+            <div class="feat-meta"><span>${main.date}</span><span>${main.author}</span></div>
+          </div>
+        </a>
+        <div class="feat-side">
+          ${subs.map(a=>`<a href="./${a.slug}/" class="feat-mini"><img class="feat-mini-img" src="${a.image}" alt="${a.title}" loading="lazy" onerror="this.style.cssText='background:var(--surface2)'"><div class="feat-mini-tag">${a.category}</div><div class="feat-mini-title">${a.title}</div><div class="feat-mini-date">${a.date}</div></a>`).join('')}
+        </div>`;
+    }
+    renderArtsGrid();
   }
 }
 loadArticles();
 
-// Three.js particle network animation
-(function initThree() {
-  const canvas = document.getElementById('hero-canvas');
-  if (!canvas || typeof THREE === 'undefined') return;
-  const hero = canvas.parentElement;
-  const W = hero.offsetWidth, H = hero.offsetHeight;
-  canvas.width = W; canvas.height = H;
-
-  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false });
-  renderer.setSize(W, H);
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
-
-  const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(60, W / H, 0.1, 1000);
-  camera.position.z = 80;
-
-  const N = 120;
-  const positions = new Float32Array(N * 3);
-  const velocities = [];
-  for (let i = 0; i < N; i++) {
-    positions[i * 3]     = (Math.random() - 0.5) * 200;
-    positions[i * 3 + 1] = (Math.random() - 0.5) * 120;
-    positions[i * 3 + 2] = (Math.random() - 0.5) * 60;
-    velocities.push({ x: (Math.random() - 0.5) * 0.06, y: (Math.random() - 0.5) * 0.04 });
-  }
-
-  const geo = new THREE.BufferGeometry();
-  geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-  const mat = new THREE.PointsMaterial({ color: 0x60a5fa, size: 1.2, transparent: true, opacity: 0.7 });
-  const points = new THREE.Points(geo, mat);
-  scene.add(points);
-
-  // Line geometry for connections
-  const lineGeo = new THREE.BufferGeometry();
-  const linePos = new Float32Array(N * N * 6);
-  lineGeo.setAttribute('position', new THREE.BufferAttribute(linePos, 3));
-  const lineMat = new THREE.LineSegments ? new THREE.LineBasicMaterial({ color: 0x2563eb, transparent: true, opacity: 0.18 }) : null;
-  let lineSegs;
-  if (THREE.LineSegments && lineMat) {
-    lineSegs = new THREE.LineSegments(lineGeo, lineMat);
-    scene.add(lineSegs);
-  }
-
-  function animate() {
-    requestAnimationFrame(animate);
-    const pos = geo.attributes.position.array;
-    for (let i = 0; i < N; i++) {
-      pos[i*3]   += velocities[i].x;
-      pos[i*3+1] += velocities[i].y;
-      if (Math.abs(pos[i*3])   > 100) velocities[i].x *= -1;
-      if (Math.abs(pos[i*3+1]) > 60)  velocities[i].y *= -1;
-    }
-    geo.attributes.position.needsUpdate = true;
-
-    if (lineSegs) {
-      const lp = lineGeo.attributes.position.array;
-      let idx = 0;
-      const maxDist = 35;
-      for (let i = 0; i < N; i++) {
-        for (let j = i + 1; j < N; j++) {
-          const dx = pos[i*3]-pos[j*3], dy = pos[i*3+1]-pos[j*3+1];
-          if (Math.sqrt(dx*dx+dy*dy) < maxDist && idx < lp.length - 5) {
-            lp[idx++]=pos[i*3]; lp[idx++]=pos[i*3+1]; lp[idx++]=pos[i*3+2];
-            lp[idx++]=pos[j*3]; lp[idx++]=pos[j*3+1]; lp[idx++]=pos[j*3+2];
-          }
-        }
-      }
-      while (idx < lp.length) lp[idx++] = 0;
-      lineGeo.attributes.position.needsUpdate = true;
-      lineGeo.setDrawRange(0, idx / 3);
-    }
-
-    points.rotation.y += 0.0005;
-    renderer.render(scene, camera);
-  }
-  animate();
-
-  window.addEventListener('resize', () => {
-    const nW = hero.offsetWidth, nH = hero.offsetHeight;
-    camera.aspect = nW / nH;
-    camera.updateProjectionMatrix();
-    renderer.setSize(nW, nH);
-  });
-})();
 </script>
 </body>
 </html>
