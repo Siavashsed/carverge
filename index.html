@@ -273,9 +273,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 32p
 .footer-legal a:hover{color:var(--blue)}@media(max-width:880px){.footer-top{grid-template-columns:1fr 1fr;gap:36px}footer{padding:52px 22px 26px}}@media(max-width:520px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}</style>
 </head>
 <body>
-<!--SHELL:ACCENT:#5b9dff-->
-<!--SHELL:HEADER-->
-
 <!-- NAV -->
 <nav class="nav" id="main-nav">
   <a href="./" class="nav-logo">
@@ -288,15 +285,13 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 32p
     <a href="./#coverage" class="nav-link">Coverage</a>
     <a href="./#analysis" class="nav-link">Analysis</a>
     <a href="./#articles" class="nav-link">Articles</a>
-    <a href="about.html" class="nav-link">About</a>
+    <a href="about" class="nav-link">About</a>
     <a href="./#newsletter" class="nav-cta">Get the Dispatch</a>
   </div>
   <button class="nav-mob" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(238,243,251,.8)" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
   </button>
 </nav>
-<!--/SHELL:HEADER-->
-
 <!-- HERO -->
 <header class="hero">
   <div class="hero-bg"></div>
@@ -596,8 +591,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 32p
 
 
 <!-- VIEW_ALL_ARTICLES_LINK -->
-<div class="view-all" style="text-align:center;padding:28px 24px 40px;font-family:inherit"><a href="./articles.html" style="display:inline-block;color:currentColor;border:1px solid currentColor;padding:10px 22px;border-radius:999px;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;opacity:.85;transition:opacity .15s" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='.85'">View all articles -&gt;</a></div>
-<!--SHELL:FOOTER-->
+<div style="padding:32px 24px 48px"><a href="./articles" style="display:inline-flex;align-items:center;gap:10px;color:currentColor;text-decoration:none;font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;opacity:.8;padding:8px 0;border-bottom:1px solid currentColor">Every piece in the journal <span aria-hidden="true">&rarr;</span></a></div>
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -630,9 +624,9 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 32p
         <div class="footer-col-title">Company</div>
         <ul class="footer-links">
           <li><a href="./">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="terms.html">Terms</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="privacy">Privacy</a></li>
+          <li><a href="terms">Terms</a></li>
         </ul>
       </div>
       <div>
@@ -648,9 +642,9 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 32p
     <div class="footer-bottom">
       <span class="footer-copy">&copy; 2026 CarVerge. Independent automotive engineering analysis.</span>
       <div class="footer-legal">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="about.html">About</a>
+        <a href="privacy">Privacy</a>
+        <a href="terms">Terms</a>
+        <a href="about">About</a>
       </div>
     </div>
   </div>
@@ -756,6 +750,5 @@ function loadArticles() {
 }
 loadArticles();
 </script>
-<!--/SHELL:FOOTER-->
 </body>
 </html>
