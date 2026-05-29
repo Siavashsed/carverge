@@ -1,0 +1,60 @@
+[
+  {
+    "title": "Ford's F-150 Lightning Reveal in 2021 Changed What EV Skeptics Were Willing to Believe",
+    "slug": "ford-f150-lightning-reveal-2021",
+    "meta_description": "Ford's 2021 F-150 Lightning reveal forced a reckoning in EV adoption. James Carr on why this truck mattered more than the specs suggested.",
+    "date": "January 03, 2021",
+    "date_iso": "2021-01-03",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/29088104/pexels-photo-29088104.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "media.ford.com",
+      "iea.org",
+      "eia.gov"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The Tesla Model Y Launch in 2020 Was More Than a New Car - It Was a Line in the Sand",
+    "slug": "tesla-model-y-2020-launch-impact",
+    "meta_description": "James Carr on the Tesla Model Y's 2020 launch: what it meant for EV adoption, what the hype missed, and why it still matters.",
+    "date": "April 06, 2020",
+    "date_iso": "2020-04-06",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/29057682/pexels-photo-29057682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ir.tesla.com",
+      "iea.org",
+      "munromfg.com",
+      "reuters.com"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The Mustang Mach-E Reveal Was the Moment Ford Stopped Playing Defense on EVs",
+    "slug": "ford-mustang-mach-e-reveal-2019",
+    "meta_description": "Ford's Mustang Mach-E reveal in late 2019 forced a real reckoning for legacy automakers. Here's what it meant then - and why it mattered.",
+    "date": "November 04, 2019",
+    "date_iso": "2019-11-04",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/30795598/pexels-photo-30795598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "energy.gov",
+      "pewresearch.org",
+      "theicct.org"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  }
+]
