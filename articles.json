@@ -56,5 +56,44 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The BMW i8 Is the Most Underrated Spaceship Ever Built for Public Roads",
+    "slug": "bmw-i8-most-underrated-spaceship",
+    "meta_description": "The BMW i8 never got the respect it deserved. James Carr makes the case for why this plug-in hybrid supercar is a misunderstood engineering masterpiece.",
+    "date": "May 29, 2026",
+    "date_iso": "2026-05-29",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/5431376/pexels-photo-5431376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fueleconomy.gov",
+      "nrel.gov",
+      "bmwgroup.com"
+    ],
+    "posted_iso": "2026-05-29",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The NACS Adapter Rollout in 2024 Proved That Charging Standards Actually Matter",
+    "slug": "nacs-adapter-rollout-2024",
+    "meta_description": "James Carr breaks down why the 2024 NACS adapter rollout was the most consequential EV infrastructure moment of the year.",
+    "date": "February 17, 2024",
+    "date_iso": "2024-02-17",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/3044622/pexels-photo-3044622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "energy.gov",
+      "nrel.gov",
+      "jdpower.com",
+      "iea.org",
+      "electrek.co"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
