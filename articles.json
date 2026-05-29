@@ -16,7 +16,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Battery Technology"
   },
   {
     "title": "The Tesla Model Y Launch in 2020 Was More Than a New Car - It Was a Line in the Sand",
@@ -36,7 +37,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Reviews & Comparisons"
   },
   {
     "title": "The Mustang Mach-E Reveal Was the Moment Ford Stopped Playing Defense on EVs",
@@ -55,7 +57,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Cost of Ownership"
   },
   {
     "title": "The BMW i8 Is the Most Underrated Spaceship Ever Built for Public Roads",
@@ -73,7 +76,8 @@
     "posted_iso": "2026-05-29",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Battery Technology"
   },
   {
     "title": "The NACS Adapter Rollout in 2024 Proved That Charging Standards Actually Matter",
@@ -94,6 +98,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Charging & Infrastructure"
   }
 ]
