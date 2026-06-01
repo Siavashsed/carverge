@@ -100,5 +100,23 @@
       "en"
     ],
     "category": "Charging & Infrastructure"
+  },
+  {
+    "title": "The BMW i8 Is the Most Underrated Spaceship Ever Built for Public Roads",
+    "slug": "bmw-i8-most-underrated-spaceship-2",
+    "meta_description": "The BMW i8 is a misunderstood engineering masterpiece. Here's why it deserves far more respect than the used car market gives it.",
+    "date": "June 01, 2026",
+    "date_iso": "2026-06-01",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/18660614/pexels-photo-18660614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "epa.gov",
+      "iea.org",
+      "caranddriver.com"
+    ],
+    "posted_iso": "2026-06-01",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
