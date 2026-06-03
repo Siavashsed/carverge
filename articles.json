@@ -119,5 +119,23 @@
       "en"
     ],
     "category": "Powertrain"
+  },
+  {
+    "title": "The BMW i8 Is the Most Underrated Spaceship Ever Built for Public Roads",
+    "slug": "bmw-i8-most-underrated-spaceship-3",
+    "meta_description": "James Carr argues the BMW i8 is criminally underrated. Here's the engineering case for why this plug-in hybrid supercar was ahead of its time.",
+    "date": "June 03, 2026",
+    "date_iso": "2026-06-03",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/8063212/pexels-photo-8063212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "caranddriver.com",
+      "fueleconomy.gov",
+      "iea.org"
+    ],
+    "posted_iso": "2026-06-03",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
