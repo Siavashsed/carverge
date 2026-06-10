@@ -157,5 +157,26 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Tesla Model 3 Hit 300,000 US Deliveries in 2019 and Changed What 'Mass Market EV' Actually Means",
+    "slug": "tesla-model-3-2019-mass-market",
+    "meta_description": "Tesla's Model 3 crossed 300,000 US deliveries in 2019. James Carr on what that milestone really meant for EV ownership, charging, and the competition.",
+    "date": "January 31, 2019",
+    "date_iso": "2019-01-31",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/33381838/pexels-photo-33381838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "iea.org",
+      "tesla.com",
+      "energy.gov",
+      "jdpower.com",
+      "teslamotorsclub.com"
+    ],
+    "posted_iso": "2026-06-10",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
