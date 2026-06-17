@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#60a5fa"/><text x="50%" y="55%" font-family="-apple-system,system-ui,sans-serif" font-size="14" font-weight="800" fill="#fff" text-anchor="middle" dominant-baseline="middle">CA</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <path d="M9 35 A18 18 0 1 1 39 35" stroke="#ff7a1a" stroke-width="3" stroke-linecap="round"/>
+  <g stroke="#ff7a1a" stroke-width="2" stroke-linecap="round" opacity=".5">
+    <path d="M10.5 23 l3 1"/><path d="M14.5 15.5 l2 2"/><path d="M24 12.5 v3"/><path d="M33.5 15.5 l-2 2"/><path d="M37.5 23 l-3 1"/>
+  </g>
+  <path d="M24 27 L33.5 17.5" stroke="#ff7a1a" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="24" cy="27" r="3.4" fill="#ff7a1a"/>
+</svg>
