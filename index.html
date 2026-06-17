@@ -51,20 +51,19 @@ h1,h2,h3,h4{font-weight:650}
 .preloader{position:fixed;inset:0;z-index:9999;background:#08070a;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:clip-path .76s var(--ease),opacity .5s ease}
 .preloader.done{clip-path:inset(0 0 100% 0);opacity:0;pointer-events:none}
 .pl-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:16px}
-.pl-gauge{position:relative;width:128px;height:128px;display:grid;place-items:center;margin-bottom:4px}
-.pl-ring{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
-.pl-track{fill:none;stroke:rgba(255,255,255,.07);stroke-width:3}
-.pl-fill{fill:none;stroke:var(--orange);stroke-width:3;stroke-linecap:round;stroke-dasharray:327;stroke-dashoffset:327;transition:stroke-dashoffset .14s linear;filter:drop-shadow(0 0 8px var(--orange))}
-.pl-logo{width:54px;height:54px;animation:pllogo .55s var(--ease) both;filter:drop-shadow(0 0 18px rgba(255,122,26,.55))}
-@keyframes pllogo{0%{opacity:0;transform:scale(.78) rotate(-20deg)}100%{opacity:1;transform:scale(1) rotate(0)}}
-.pl-word{font-family:var(--sans);font-weight:800;font-size:20px;letter-spacing:.28em;color:var(--ink);text-indent:.28em}
+.pl-logo{width:66px;height:66px;filter:drop-shadow(0 0 18px rgba(255,122,26,.5));animation:plin .5s var(--ease) both,plglitch 2.4s steps(1) .5s infinite}
+@keyframes plin{0%{opacity:0;transform:scale(.8)}100%{opacity:1;transform:scale(1)}}
+@keyframes plglitch{
+  0%,86%,100%{transform:none;filter:drop-shadow(0 0 18px rgba(255,122,26,.5))}
+  87%{transform:translate(-2px,1px) skewX(4deg);filter:drop-shadow(2px 0 0 rgba(255,160,80,.9)) drop-shadow(-2px 0 0 rgba(120,200,255,.6))}
+  89%{transform:translate(2px,-1px)}
+  90%{transform:translate(-1px,0) skewX(-3deg);filter:drop-shadow(-2px 0 0 rgba(255,160,80,.9)) drop-shadow(2px 0 0 rgba(120,200,255,.5))}
+  92%{transform:translate(1px,1px);opacity:.85}
+  93%{transform:none;opacity:1}
+}
+.pl-word{font-family:var(--sans);font-weight:800;font-size:19px;letter-spacing:.28em;color:var(--ink);text-indent:.28em;margin-top:14px;animation:plin .5s var(--ease) .1s both,plword 2.4s steps(1) .5s infinite}
 .pl-word b{color:var(--orange);font-weight:800}
-.pl-pct{font-family:var(--mono);font-size:11px;letter-spacing:.34em;color:var(--ink-soft)}
-.pl-pct::after{content:"%"}
-.pl-speed{position:absolute;inset:0;overflow:hidden;pointer-events:none}
-.pl-speed::before,.pl-speed::after{content:"";position:absolute;left:-40%;width:180%;height:1px;background:linear-gradient(90deg,transparent,var(--orange),transparent);animation:streak .9s linear infinite}
-.pl-speed::before{top:42%}.pl-speed::after{top:58%;animation-delay:.45s;opacity:.6}
-@keyframes streak{0%{transform:translateX(-55%) scaleX(.3);opacity:0}45%{opacity:.85}100%{transform:translateX(55%) scaleX(1);opacity:0}}
+@keyframes plword{0%,86%,100%{text-shadow:none;clip-path:none}88%{text-shadow:2px 0 rgba(255,160,80,.8),-2px 0 rgba(120,200,255,.6)}90%{text-shadow:-2px 0 rgba(255,160,80,.7);transform:translateX(1px)}91%{text-shadow:none}}
 
 /* NAV */
 nav{position:fixed;top:0;left:0;width:100%;z-index:50;display:flex;align-items:center;justify-content:space-between;
@@ -74,7 +73,10 @@ nav{position:fixed;top:0;left:0;width:100%;z-index:50;display:flex;align-items:c
   transition:background .5s var(--ease),padding .5s var(--ease),border-color .5s,box-shadow .5s;border-bottom:1px solid transparent}
 nav.docked{background:rgba(8,7,10,.88);backdrop-filter:blur(20px) saturate(140%);-webkit-backdrop-filter:blur(20px) saturate(140%);border-bottom-color:var(--line);padding-top:13px;padding-bottom:13px;box-shadow:0 10px 40px -20px rgba(0,0,0,.9)}
 .brand{display:flex;align-items:center;gap:11px}
-.brand-mark{width:30px;height:30px;flex:0 0 auto}
+.brand-mark{width:30px;height:30px;flex:0 0 auto;animation:markglow 3s ease-in-out infinite;transform-origin:50% 56%}
+@keyframes markglow{0%,100%{filter:drop-shadow(0 0 0 rgba(255,122,26,0))}50%{filter:drop-shadow(0 0 7px rgba(255,122,26,.7))}}
+.brand:hover .brand-mark{animation:markspin .9s var(--ease)}
+@keyframes markspin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
 .brand-word{font-family:var(--sans);font-weight:800;font-size:19px;letter-spacing:.02em;line-height:1}
 .brand-word b{color:var(--orange);font-weight:800}
 .nav-links{display:flex;align-items:center;gap:32px;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
@@ -284,14 +286,9 @@ footer{border-top:1px solid var(--line);padding:50px clamp(18px,4vw,56px);positi
 <body>
 
 <div class="preloader" id="preloader">
-  <div class="pl-speed"></div>
   <div class="pl-inner">
-    <div class="pl-gauge">
-      <svg class="pl-ring" viewBox="0 0 120 120"><circle class="pl-track" cx="60" cy="60" r="52"/><circle class="pl-fill" id="plfill" cx="60" cy="60" r="52"/></svg>
-      <img class="pl-logo" src="assets/carverge-mark.svg" alt="CarVerge" />
-    </div>
+    <img class="pl-logo" src="assets/carverge-mark.svg" alt="CarVerge" />
     <div class="pl-word">CAR<b>VERGE</b></div>
-    <div class="pl-pct"><span id="plpct">0</span></div>
   </div>
 </div>
 
@@ -396,7 +393,7 @@ footer{border-top:1px solid var(--line);padding:50px clamp(18px,4vw,56px);positi
       <div class="vidband-tint"></div>
       <div class="vidband-copy">
         <div class="eyebrow">Inside CarVerge</div>
-        <h3>Written by drivers, not&nbsp;<em>spec sheets.</em></h3>
+        <h3>Written by&nbsp;drivers,<br/>not <em>spec&nbsp;sheets.</em></h3>
         <p>We test the cars, walk the charging networks, and read the engineering papers so you do not have to. The result is car writing that respects your time and your intelligence, whether you plug in or fill&nbsp;up.</p>
         <a class="link" href="#stories" data-link data-hot>Read the latest
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -632,9 +629,8 @@ if(!isTouch){
 /* preloader */
 (function(){
   const pl=document.getElementById('preloader');if(!pl)return;
-  const fill=document.getElementById('plfill'),pct=document.getElementById('plpct');
-  const C=327; let p=0,fin=false;
-  const t=setInterval(()=>{p=Math.min(100,p+Math.random()*24+12);if(fill)fill.style.strokeDashoffset=C*(1-p/100);if(pct)pct.textContent=Math.floor(p);if(p>=100){clearInterval(t);end();}},58);
+  let fin=false;
+  setTimeout(end,1150);
   function end(){if(fin)return;fin=true;setTimeout(()=>{pl.classList.add('done');setTimeout(()=>{pl.parentNode&&pl.parentNode.removeChild(pl);},780);},110);}
   setTimeout(end,2200);
 })();
