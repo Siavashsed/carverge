@@ -376,7 +376,12 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 32p
 .cvg-btn:hover{filter:brightness(1.08)}@media(max-width:560px){.cvg-intro::first-letter{font-size:52px}.cvg-spec{grid-template-columns:1fr}}
 
 /* tight headlines */
-.art h1,.wrap h1,.art-grid h1,.art-min h1,.mag-hero h1,.imm-hero h1,article h1,h1{line-height:1.1!important}</style>
+.art h1,.wrap h1,.art-grid h1,.art-min h1,.mag-hero h1,.imm-hero h1,article h1,h1{line-height:1.1!important}
+/* === CV: header gap + no drop-cap (override) === */
+.cvg-wrap{padding-top:108px}
+@media(max-width:700px){.cvg-wrap{padding-top:92px}}
+.cvg-intro::first-letter{float:none;font-size:inherit;font-weight:inherit;padding:0;margin:0;color:inherit;line-height:inherit}
+</style>
 </head>
 <body data-page-depth="1">
 <!-- NAV -->
