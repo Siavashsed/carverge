@@ -17,17 +17,17 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 :root{
-  --bg:#05080d;
-  --bg2:#080c14;
-  --surface:#0c1320;
-  --surface2:#101a2c;
-  --blue:#5b9dff;
-  --blue2:#2563eb;
-  --cyan:#34d6e8;
-  --text:#eef3fb;
-  --muted:#7c93b3;
-  --muted2:#5a6e8c;
-  --border:#172439;
+  --bg:#08070a;
+  --bg2:#0c0a0e;
+  --surface:#100d13;
+  --surface2:#17120d;
+  --blue:#ff7a1a;
+  --blue2:#ff7a1a;
+  --cyan:#ff9d4d;
+  --text:#f4f1ec;
+  --muted:#9a938b;
+  --muted2:#6c655d;
+  --border:#241c14;
   --font:'Inter',system-ui,-apple-system,sans-serif;
   --display:'Space Grotesk','Inter',sans-serif;
   --mono:'JetBrains Mono',ui-monospace,monospace;
@@ -35,7 +35,7 @@ html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
-::selection{background:var(--blue);color:#05080d}
+::selection{background:var(--blue);color:#08070a}
 
 /* reveal */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
@@ -57,7 +57,7 @@ img{display:block;max-width:100%}
 .nav-links{display:flex;align-items:center;gap:2px}
 .nav-link{font-size:14px;font-weight:500;color:var(--muted);padding:8px 15px;border-radius:8px;transition:color .2s,background .2s}
 .nav-link:hover{color:#fff;background:rgba(255,255,255,.04)}
-.nav-cta{font-family:var(--display);font-size:13px;font-weight:600;color:#05080d;background:linear-gradient(140deg,var(--blue),var(--cyan));padding:10px 20px;margin-left:12px;border-radius:9px;transition:transform .2s,box-shadow .2s}
+.nav-cta{font-family:var(--display);font-size:13px;font-weight:600;color:#08070a;background:linear-gradient(140deg,var(--blue),var(--cyan));padding:10px 20px;margin-left:12px;border-radius:9px;transition:transform .2s,box-shadow .2s}
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(91,157,255,.4)}
 .nav-mob{display:none;background:none;border:none;cursor:pointer;padding:6px}@media(max-width:820px){
   .nav{padding:0 20px}
@@ -90,7 +90,7 @@ img{display:block;max-width:100%}
 .hero-h1 em{font-style:normal;background:linear-gradient(120deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-sub{font-size:18px;font-weight:300;color:var(--muted);max-width:520px;line-height:1.7;margin-bottom:34px}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
-.btn-primary{display:inline-flex;align-items:center;gap:9px;font-family:var(--display);font-size:14px;font-weight:600;color:#05080d;background:linear-gradient(140deg,var(--blue),var(--cyan));padding:15px 28px;border-radius:11px;transition:transform .2s,box-shadow .2s;border:none;cursor:pointer}
+.btn-primary{display:inline-flex;align-items:center;gap:9px;font-family:var(--display);font-size:14px;font-weight:600;color:#08070a;background:linear-gradient(140deg,var(--blue),var(--cyan));padding:15px 28px;border-radius:11px;transition:transform .2s,box-shadow .2s;border:none;cursor:pointer}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(91,157,255,.4)}
 .btn-ghost{display:inline-flex;align-items:center;gap:9px;font-family:var(--display);font-size:14px;font-weight:500;color:var(--text);border:1px solid var(--border);background:rgba(255,255,255,.02);padding:15px 26px;border-radius:11px;transition:all .2s}
 .btn-ghost:hover{border-color:var(--blue);color:#fff;background:rgba(91,157,255,.06)}
@@ -202,7 +202,7 @@ section{padding:96px 32px}
 .art-card:hover .art-thumb img.art-thumb-img{transform:scale(1.04)}
 .art-thumb.has-img .art-thumb-grid,.art-thumb.has-img svg.bigicon{display:none}
 .art-thumb.has-img .art-cat{position:relative;z-index:2}
-.art-cat{position:relative;font-family:var(--mono);font-size:10px;font-weight:500;color:#05080d;background:linear-gradient(120deg,var(--blue),var(--cyan));padding:5px 9px;border-radius:6px;text-transform:uppercase;letter-spacing:.5px}
+.art-cat{position:relative;font-family:var(--mono);font-size:10px;font-weight:500;color:#08070a;background:linear-gradient(120deg,var(--blue),var(--cyan));padding:5px 9px;border-radius:6px;text-transform:uppercase;letter-spacing:.5px}
 .art-body{padding:20px;flex:1;display:flex;flex-direction:column}
 .art-title{font-family:var(--display);font-size:17px;font-weight:600;color:var(--text);line-height:1.32;margin-bottom:10px;flex:1}
 .art-card:hover .art-title{color:#fff}
@@ -236,7 +236,7 @@ section{padding:96px 32px}
 .faq-icon{width:26px;height:26px;border-radius:8px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .3s,background .3s}
 .faq-icon svg{color:var(--blue)}
 .faq-item.open .faq-icon{transform:rotate(45deg);background:var(--blue)}
-.faq-item.open .faq-icon svg{color:#05080d}
+.faq-item.open .faq-icon svg{color:#08070a}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
 .faq-a-inner{padding:0 24px 22px;font-size:14.5px;color:var(--muted);font-weight:300;line-height:1.7}
 
@@ -252,7 +252,7 @@ section{padding:96px 32px}
 .nl-input{flex:1;min-width:0;font-family:var(--font);font-size:14px;color:var(--text);background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px 17px;outline:none;transition:border-color .2s}
 .nl-input:focus{border-color:var(--blue)}
 .nl-input::placeholder{color:var(--muted2)}
-.nl-btn{font-family:var(--display);font-size:14px;font-weight:600;color:#05080d;background:linear-gradient(140deg,var(--blue),var(--cyan));border:none;border-radius:10px;padding:14px 26px;cursor:pointer;white-space:nowrap;transition:transform .2s,box-shadow .2s}
+.nl-btn{font-family:var(--display);font-size:14px;font-weight:600;color:#08070a;background:linear-gradient(140deg,var(--blue),var(--cyan));border:none;border-radius:10px;padding:14px 26px;cursor:pointer;white-space:nowrap;transition:transform .2s,box-shadow .2s}
 .nl-btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(91,157,255,.4)}
 .nl-fine{font-family:var(--mono);font-size:11px;color:var(--muted2);margin-top:16px}@media(max-width:560px){.nl-card{padding:40px 24px}.nl-form{flex-direction:column}}
 
@@ -278,7 +278,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 32p
 .footer-legal a:hover{color:var(--blue)}@media(max-width:880px){.footer-top{grid-template-columns:1fr 1fr;gap:36px}footer{padding:52px 22px 26px}}@media(max-width:520px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
 /* page */
 
-.cvg{background:#040d1a;color:#e0eeff;font-family:system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.cvg{background:#0b0810;color:#f0ece6;font-family:system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 .cvg *,.cvg *::before,.cvg *::after{box-sizing:border-box}
 .cvg-wrap{max-width:1280px;margin:0 auto;padding:clamp(24px,3.4vw,40px) clamp(18px,4vw,30px) 96px}
 .cvg-grid{display:grid;grid-template-columns:minmax(0,1fr) 332px;gap:clamp(30px,4vw,58px);align-items:start}
@@ -286,93 +286,93 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 32p
 .cvg-aside{position:sticky;top:22px;display:flex;flex-direction:column;gap:20px}@media(max-width:1000px){.cvg-grid{grid-template-columns:1fr;gap:42px}.cvg-aside{position:static}.cvg-main{max-width:none}}
 
 /* kicker as a spec-plate */
-.cvg-kicker{display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#5b9dff;background:rgba(96,165,250,.07);border:1px solid rgba(96,165,250,.26);padding:6px 13px;border-radius:6px;margin:0 0 18px}
-.cvg-kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:#5b9dff;box-shadow:0 0 9px #5b9dff}
+.cvg-kicker{display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#ff7a1a;background:rgba(96,165,250,.07);border:1px solid rgba(96,165,250,.26);padding:6px 13px;border-radius:6px;margin:0 0 18px}
+.cvg-kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:#ff7a1a;box-shadow:0 0 9px #ff7a1a}
 .cvg-h1{font-family:system-ui,sans-serif;font-size:clamp(30px,4.8vw,50px);font-weight:800;line-height:1.05;letter-spacing:-.022em;color:#fff;margin:0 0 16px;text-wrap:balance}
-.cvg-dek{font-family:system-ui,sans-serif;font-weight:300;font-size:clamp(17px,2vw,21px);line-height:1.55;color:#9ab8d8;margin:0 0 24px;text-wrap:pretty;max-width:64ch}
+.cvg-dek{font-family:system-ui,sans-serif;font-weight:300;font-size:clamp(17px,2vw,21px);line-height:1.55;color:#d6b48e;margin:0 0 24px;text-wrap:pretty;max-width:64ch}
 
 /* byline ribbon */
-.cvg-byline{display:flex;align-items:center;gap:13px;padding:14px 0;border-top:1px solid #0e2040;border-bottom:1px solid #0e2040;margin:0 0 30px}
-.cvg-by-av{width:42px;height:42px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-family:system-ui,sans-serif;font-weight:800;font-size:14px;color:#fff;background:linear-gradient(135deg,#5b9dff,#5b9dff);position:relative;overflow:hidden}
+.cvg-byline{display:flex;align-items:center;gap:13px;padding:14px 0;border-top:1px solid #221813;border-bottom:1px solid #221813;margin:0 0 30px}
+.cvg-by-av{width:42px;height:42px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-family:system-ui,sans-serif;font-weight:800;font-size:14px;color:#fff;background:linear-gradient(135deg,#ff7a1a,#ff7a1a);position:relative;overflow:hidden}
 .cvg-by-av img,.cvg-prof-av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
 .cvg-by-col{display:flex;flex-direction:column;gap:2px;min-width:0}
-.cvg-by-name{font-family:system-ui,sans-serif;font-weight:700;font-size:14.5px;color:#e0eeff}
-.cvg-by-meta{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;color:#6494c8;letter-spacing:.02em}
-.cvg-by-meta b{color:#5b9dff;font-weight:600}
+.cvg-by-name{font-family:system-ui,sans-serif;font-weight:700;font-size:14.5px;color:#f0ece6}
+.cvg-by-meta{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;color:#c8945e;letter-spacing:.02em}
+.cvg-by-meta b{color:#ff7a1a;font-weight:600}
 
 /* hero */
 .cvg-hero{margin:0 0 36px}
-.cvg-hero-frame{border:1px solid #0e2040;border-radius:16px;padding:7px;background:#071428;box-shadow:0 24px 60px -40px rgba(0,0,0,.9)}
+.cvg-hero-frame{border:1px solid #221813;border-radius:16px;padding:7px;background:#130d09;box-shadow:0 24px 60px -40px rgba(0,0,0,.9)}
 .cvg-hero img{width:100%;border-radius:11px;display:block}
-.cvg-cap{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:10.5px;letter-spacing:.08em;color:#6494c8;margin-top:11px;text-transform:uppercase}
-.cvg-cap-dot{width:6px;height:6px;border-radius:50%;background:#5b9dff;flex:0 0 auto}
+.cvg-cap{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:10.5px;letter-spacing:.08em;color:#c8945e;margin-top:11px;text-transform:uppercase}
+.cvg-cap-dot{width:6px;height:6px;border-radius:50%;background:#ff7a1a;flex:0 0 auto}
 
 /* body */
-.cvg-body{font-size:18.5px;line-height:1.8;color:#9ab8d8}
+.cvg-body{font-size:18.5px;line-height:1.8;color:#d6b48e}
 .cvg-body p{margin:0 0 22px;text-wrap:pretty}
-.cvg-intro{font-size:21px;line-height:1.62;font-weight:400;color:#e0eeff;margin:0 0 26px}
-.cvg-intro::first-letter{float:left;font-family:system-ui,sans-serif;font-weight:800;font-size:64px;line-height:.82;padding:6px 14px 0 0;color:#5b9dff}
-.cvg-body a{color:#5b9dff;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1.5px;text-decoration-color:rgba(96,165,250,.45)}
-.cvg-body a:hover{text-decoration-color:#5b9dff}
-.cvg-body strong{color:#e0eeff;font-weight:700}
+.cvg-intro{font-size:21px;line-height:1.62;font-weight:400;color:#f0ece6;margin:0 0 26px}
+.cvg-intro::first-letter{float:left;font-family:system-ui,sans-serif;font-weight:800;font-size:64px;line-height:.82;padding:6px 14px 0 0;color:#ff7a1a}
+.cvg-body a{color:#ff7a1a;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1.5px;text-decoration-color:rgba(96,165,250,.45)}
+.cvg-body a:hover{text-decoration-color:#ff7a1a}
+.cvg-body strong{color:#f0ece6;font-weight:700}
 .cvg-body ul,.cvg-body ol{margin:0 0 22px;padding-left:22px}
 .cvg-body li{margin:0 0 9px}
-.cvg-h2{font-family:system-ui,sans-serif;font-size:clamp(22px,3vw,31px);font-weight:800;line-height:1.16;letter-spacing:-.014em;color:#fff;margin:48px 0 15px;padding-left:16px;border-left:3px solid #5b9dff}
-.cvg-body h3{font-family:system-ui,sans-serif;font-size:19px;font-weight:700;color:#e0eeff;margin:30px 0 10px}
+.cvg-h2{font-family:system-ui,sans-serif;font-size:clamp(22px,3vw,31px);font-weight:800;line-height:1.16;letter-spacing:-.014em;color:#fff;margin:48px 0 15px;padding-left:16px;border-left:3px solid #ff7a1a}
+.cvg-body h3{font-family:system-ui,sans-serif;font-size:19px;font-weight:700;color:#f0ece6;margin:30px 0 10px}
 
 /* conclusion = "bench verdict" */
-.cvg-verdict{margin:46px 0 0;padding:24px 26px;background:linear-gradient(160deg,rgba(96,165,250,.10),rgba(37,99,235,.04));border:1px solid #0e2040;border-radius:16px;font-size:17px;line-height:1.66;color:#e0eeff}
-.cvg-verdict::before{content:"The verdict";display:block;font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#5b9dff;margin-bottom:11px}
+.cvg-verdict{margin:46px 0 0;padding:24px 26px;background:linear-gradient(160deg,rgba(96,165,250,.10),rgba(37,99,235,.04));border:1px solid #221813;border-radius:16px;font-size:17px;line-height:1.66;color:#f0ece6}
+.cvg-verdict::before{content:"The verdict";display:block;font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#ff7a1a;margin-bottom:11px}
 
 /* author = driver profile / spec sheet */
-.cvg-prof{border:1px solid #0e2040;border-radius:18px;background:#071428;overflow:hidden}
-.cvg-prof-top{display:flex;align-items:center;gap:13px;padding:18px 18px 14px;background:linear-gradient(135deg,rgba(37,99,235,.22),rgba(96,165,250,.06));border-bottom:1px solid #0e2040}
-.cvg-prof-av{width:54px;height:54px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-family:system-ui,sans-serif;font-weight:800;font-size:18px;color:#fff;background:linear-gradient(135deg,#5b9dff,#5b9dff);border:2px solid #0b1d36;position:relative;overflow:hidden}
+.cvg-prof{border:1px solid #221813;border-radius:18px;background:#130d09;overflow:hidden}
+.cvg-prof-top{display:flex;align-items:center;gap:13px;padding:18px 18px 14px;background:linear-gradient(135deg,rgba(37,99,235,.22),rgba(96,165,250,.06));border-bottom:1px solid #221813}
+.cvg-prof-av{width:54px;height:54px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-family:system-ui,sans-serif;font-weight:800;font-size:18px;color:#fff;background:linear-gradient(135deg,#ff7a1a,#ff7a1a);border:2px solid #1a130d;position:relative;overflow:hidden}
 .cvg-prof-id{min-width:0}
-.cvg-prof-tag{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:9.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#5b9dff;margin:0 0 4px}
+.cvg-prof-tag{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:9.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#ff7a1a;margin:0 0 4px}
 .cvg-prof-n{font-family:system-ui,sans-serif;font-size:17px;font-weight:800;color:#fff;margin:0;line-height:1.1}
-.cvg-prof-plate{display:inline-flex;align-items:center;gap:6px;margin-top:6px;font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:10.5px;font-weight:700;letter-spacing:.16em;color:#e0eeff;background:#040d1a;border:1px solid #0e2040;border-radius:5px;padding:3px 8px}
-.cvg-prof-plate::before{content:"";width:5px;height:9px;border-radius:1px;background:#5b9dff}
+.cvg-prof-plate{display:inline-flex;align-items:center;gap:6px;margin-top:6px;font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:10.5px;font-weight:700;letter-spacing:.16em;color:#f0ece6;background:#0b0810;border:1px solid #221813;border-radius:5px;padding:3px 8px}
+.cvg-prof-plate::before{content:"";width:5px;height:9px;border-radius:1px;background:#ff7a1a}
 .cvg-prof-body{padding:16px 18px 18px}
-.cvg-prof-r{font-size:12.5px;font-weight:600;color:#5b9dff;margin:0 0 9px}
-.cvg-prof-b{font-size:13.5px;line-height:1.62;color:#9ab8d8;margin:0 0 15px}
-.cvg-spec{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#0e2040;border:1px solid #0e2040;border-radius:10px;overflow:hidden}
-.cvg-spec-cell{background:#040d1a;padding:11px 12px}
-.cvg-spec-k{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#6494c8;margin:0 0 3px}
-.cvg-spec-v{font-family:system-ui,sans-serif;font-size:14px;font-weight:800;color:#e0eeff}
+.cvg-prof-r{font-size:12.5px;font-weight:600;color:#ff7a1a;margin:0 0 9px}
+.cvg-prof-b{font-size:13.5px;line-height:1.62;color:#d6b48e;margin:0 0 15px}
+.cvg-spec{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#221813;border:1px solid #221813;border-radius:10px;overflow:hidden}
+.cvg-spec-cell{background:#0b0810;padding:11px 12px}
+.cvg-spec-k{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#c8945e;margin:0 0 3px}
+.cvg-spec-v{font-family:system-ui,sans-serif;font-size:14px;font-weight:800;color:#f0ece6}
 
 /* latest rail */
-.cvg-latest{border:1px solid #0e2040;border-radius:18px;background:#071428;padding:20px}
-.cvg-latest-k{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#5b9dff;margin:0 0 14px;display:flex;align-items:center;gap:9px}
-.cvg-latest-k::after{content:"";flex:1;height:1px;background:#0e2040}
-.cvg-lat{display:grid;grid-template-columns:62px 1fr;gap:13px;padding:13px 0;border-top:1px solid #0e2040;text-decoration:none;color:inherit;align-items:center}
+.cvg-latest{border:1px solid #221813;border-radius:18px;background:#130d09;padding:20px}
+.cvg-latest-k{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#ff7a1a;margin:0 0 14px;display:flex;align-items:center;gap:9px}
+.cvg-latest-k::after{content:"";flex:1;height:1px;background:#221813}
+.cvg-lat{display:grid;grid-template-columns:62px 1fr;gap:13px;padding:13px 0;border-top:1px solid #221813;text-decoration:none;color:inherit;align-items:center}
 .cvg-lat:first-of-type{border-top:0;padding-top:2px}
-.cvg-lat:hover .cvg-lat-t{color:#5b9dff}
-.cvg-lat-img{width:62px;height:54px;object-fit:cover;border-radius:9px;background:#0b1d36;display:block}
-.cvg-lat-t{font-family:system-ui,sans-serif;font-size:13.5px;font-weight:700;line-height:1.3;color:#e0eeff;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s}
-.cvg-lat-d{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:10px;color:#6494c8;margin-top:5px;letter-spacing:.04em;text-transform:uppercase}
-.cvg-viewall{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;background:#5b9dff;color:#fff;font-family:system-ui,sans-serif;font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:13px;border-radius:11px;text-decoration:none;transition:filter .15s}
+.cvg-lat:hover .cvg-lat-t{color:#ff7a1a}
+.cvg-lat-img{width:62px;height:54px;object-fit:cover;border-radius:9px;background:#1a130d;display:block}
+.cvg-lat-t{font-family:system-ui,sans-serif;font-size:13.5px;font-weight:700;line-height:1.3;color:#f0ece6;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s}
+.cvg-lat-d{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:10px;color:#c8945e;margin-top:5px;letter-spacing:.04em;text-transform:uppercase}
+.cvg-viewall{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;background:#ff7a1a;color:#fff;font-family:system-ui,sans-serif;font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:13px;border-radius:11px;text-decoration:none;transition:filter .15s}
 .cvg-viewall:hover{filter:brightness(1.12)}
 
 /* discussion = "Garage talk" */
-.cvg-disc{margin:58px 0 0;padding-top:30px;border-top:1px dashed #0e2040}
+.cvg-disc{margin:58px 0 0;padding-top:30px;border-top:1px dashed #221813}
 .cvg-disc-head{display:flex;align-items:center;gap:11px;margin:0 0 20px}
 .cvg-disc-k{font-family:system-ui,sans-serif;font-size:21px;font-weight:800;color:#fff}
-.cvg-pill{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:700;color:#5b9dff;background:rgba(96,165,250,.10);border:1px solid rgba(96,165,250,.26);padding:3px 11px;border-radius:999px}
-.cvg-cm{display:grid;grid-template-columns:36px 1fr;gap:13px;padding:16px 0;border-bottom:1px solid #0e2040}
-.cvg-cm-av{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:system-ui,sans-serif;font-weight:800;font-size:12px;color:#fff;background:#5b9dff}
+.cvg-pill{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:700;color:#ff7a1a;background:rgba(96,165,250,.10);border:1px solid rgba(96,165,250,.26);padding:3px 11px;border-radius:999px}
+.cvg-cm{display:grid;grid-template-columns:36px 1fr;gap:13px;padding:16px 0;border-bottom:1px solid #221813}
+.cvg-cm-av{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:system-ui,sans-serif;font-weight:800;font-size:12px;color:#fff;background:#ff7a1a}
 .cvg-cm-top{display:flex;align-items:baseline;gap:9px;margin-bottom:4px;flex-wrap:wrap}
-.cvg-cm-n{font-family:system-ui,sans-serif;font-weight:700;font-size:13.5px;color:#e0eeff}
-.cvg-cm-d{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:10.5px;color:#6494c8}
-.cvg-cm-t{font-size:14px;line-height:1.6;color:#9ab8d8;margin:0}
-.cvg-empty{font-size:13.5px;color:#6494c8;padding:12px 0}
-.cvg-form{margin-top:22px;background:#071428;border:1px solid #0e2040;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:11px}
-.cvg-form-k{font-family:system-ui,sans-serif;font-size:13px;font-weight:800;color:#e0eeff;margin:0 0 2px}
-.cvg-in,.cvg-ta{background:#040d1a;border:1px solid #0e2040;border-radius:11px;padding:12px 14px;font-family:system-ui,sans-serif;font-size:14px;color:#e0eeff;outline:none;width:100%;transition:border-color .15s}
-.cvg-in::placeholder,.cvg-ta::placeholder{color:#6494c8}
-.cvg-in:focus,.cvg-ta:focus{border-color:#5b9dff;box-shadow:0 0 0 3px rgba(96,165,250,.14)}
+.cvg-cm-n{font-family:system-ui,sans-serif;font-weight:700;font-size:13.5px;color:#f0ece6}
+.cvg-cm-d{font-family:'JetBrains Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;font-size:10.5px;color:#c8945e}
+.cvg-cm-t{font-size:14px;line-height:1.6;color:#d6b48e;margin:0}
+.cvg-empty{font-size:13.5px;color:#c8945e;padding:12px 0}
+.cvg-form{margin-top:22px;background:#130d09;border:1px solid #221813;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:11px}
+.cvg-form-k{font-family:system-ui,sans-serif;font-size:13px;font-weight:800;color:#f0ece6;margin:0 0 2px}
+.cvg-in,.cvg-ta{background:#0b0810;border:1px solid #221813;border-radius:11px;padding:12px 14px;font-family:system-ui,sans-serif;font-size:14px;color:#f0ece6;outline:none;width:100%;transition:border-color .15s}
+.cvg-in::placeholder,.cvg-ta::placeholder{color:#c8945e}
+.cvg-in:focus,.cvg-ta:focus{border-color:#ff7a1a;box-shadow:0 0 0 3px rgba(96,165,250,.14)}
 .cvg-ta{min-height:94px;resize:vertical}
-.cvg-btn{align-self:flex-start;background:#5b9dff;color:#04121f;border:0;border-radius:11px;padding:12px 26px;font-family:system-ui,sans-serif;font-weight:800;font-size:13.5px;cursor:pointer;transition:filter .15s}
+.cvg-btn{align-self:flex-start;background:#ff7a1a;color:#0b0810;border:0;border-radius:11px;padding:12px 26px;font-family:system-ui,sans-serif;font-weight:800;font-size:13.5px;cursor:pointer;transition:filter .15s}
 .cvg-btn:hover{filter:brightness(1.08)}@media(max-width:560px){.cvg-intro::first-letter{font-size:52px}.cvg-spec{grid-template-columns:1fr}}</style>
 </head>
 <body data-page-depth="1">
@@ -410,18 +410,18 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 32p
     <p>Tesla's cumulative US Model 3 deliveries crossed roughly 300,000 units by the end of 2019, according to <a href='https://www.iea.org/reports/global-ev-outlook-2020' target='_blank' rel='noopener'>IEA's Global EV Outlook 2020</a>, which tracked 2019 market data. That's a number worth sitting with. The Chevrolet Bolt, which launched two full years earlier and is a genuinely good car, was still struggling to move 20,000 units a year. The gap wasn't just about Tesla's brand heat or Elon Musk's Twitter account. It was about charging infrastructure, software integration, and a purchase experience that didn't involve a dealership finance manager trying to sell you paint protection film. The Model 3 proved those things matter as much as the powertrain itself.</p>
     <h2 class="cvg-h2">What 300,000 Deliveries Actually Looked Like on the Ground</h2>
 <div><p>Production hell was still a recent memory in 2019. Tesla had famously missed every single Model 3 production target through 2017 and most of 2018, and plenty of smart people in this industry wrote serious pieces arguing the company wouldn't survive. But by Q1 2019, the Fremont factory was building around 5,000 Model 3s per week. That's not a rumor. Tesla confirmed it in their Q1 2019 shareholder letter. And the cars were reaching buyers who had waited two-plus years since placing a $1,000 deposit.</p><p>The ownership profile was genuinely different from any previous EV buyer pool. These weren't early adopters buying a Nissan Leaf as a second city car. Model 3 buyers were ditching their primary vehicles, often BMWs or Acuras, and making the 3 their only car. When I talked to owners at that Springfield Supercharger stop, three of the four people charging alongside me had traded in an Audi A4, a BMW 3 Series, and a Mazda6. None of them had owned an EV before.</p><p>That shift in buyer type changed what 'ownership experience' meant for EVs. These weren't niche enthusiasts willing to forgive rough edges. They wanted reliable software, a working app, and a car that behaved like a car. Tesla mostly delivered. Mostly.</p></div>
-<figure style="margin:30px 0"><img src="https://images.pexels.com/photos/11206901/pexels-photo-11206901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" loading="lazy" style="width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:8px;display:block"><figcaption style="font-size:11px;color:#6494c8;text-align:center;margin-top:6px">Photo by Clayton</figcaption></figure>
+<figure style="margin:30px 0"><img src="https://images.pexels.com/photos/11206901/pexels-photo-11206901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" loading="lazy" style="width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:8px;display:block"><figcaption style="font-size:11px;color:#c8945e;text-align:center;margin-top:6px">Photo by Clayton</figcaption></figure>
 <h2 class="cvg-h2">The Supercharger Network Was the Real Competitive Moat</h2>
 <div><p>By the end of 2019, Tesla operated <a href='https://www.tesla.com/supercharger' target='_blank' rel='noopener'>over 1,800 Supercharger stations globally</a>, with roughly 1,400 of those in North America. No other EV maker came close to that proprietary fast-charging footprint. Electrify America, launched in 2018 as part of Volkswagen's diesel settlement, had fewer than 200 stations operational in the US by year-end 2019. ChargePoint had a massive number of Level 2 connectors but almost no DC fast chargers that could compete with Tesla's 150 kW output.</p><p>The practical effect was huge. A Model 3 Long Range owner in 2019 could drive coast to coast with reasonable confidence. A Bolt owner could not do the same without serious route planning, sometimes routing hundreds of miles off the most direct path. That's not a knock on the Bolt's engineering. It's a systems problem, and GM didn't own the system. Tesla did. The lesson here is one the rest of the industry is still catching up on, and you can see how that infrastructure gap played out years later in the broader <a href='/nacs-adapter-rollout-2024/'>NACS adapter rollout story, which proved charging standards actually matter</a> in ways that trace directly back to decisions made in 2019.</p><p>One common misconception I heard a lot in 2019 was that third-party networks would 'catch up fast.' They didn't. Not in reliability, not in density, and not in the user experience of just plugging in and having it work. That gap persisted well beyond 2019.</p></div>
 <h2 class="cvg-h2">Range Anxiety Was Fading, But Ownership Costs Were Getting Real</h2>
 <div><p>The Standard Range Plus Model 3, priced at $35,000 after Tesla quietly shifted to an online-only sale model in February 2019, was the car that made the numbers work for a broader buyer. Total cost of ownership was genuinely compelling. <a href='https://www.energy.gov/eere/vehicles/articles/fotw-1040-june-3-2019-average-annual-energy-cost-electric-vehicles-lower' target='_blank' rel='noopener'>The US Department of Energy's 2019 fuel cost analysis</a> put average annual electricity costs for a Model 3 at around $550 versus roughly $1,400 in gasoline for a comparable internal combustion car. Add lower brake wear from regenerative braking, no oil changes, and a simpler drivetrain with fewer wear items, and the 5-year ownership math started looking very different from the sticker price comparison.</p><p>But not everything was cheap. I've seen a pattern in 2019 Model 3 ownership that catches people off guard: the tires. The Model 3's weight, around 3,800 lbs for Long Range AWD, combined with the instant torque delivery, is genuinely hard on rear tires. Owners on the Model 3 forums were reporting rear tire wear in as little as 15,000 miles, especially on the 18-inch Michelin Primacy or Continental ProContact fitments. At roughly $180 to $220 per tire, that's a real ongoing cost most buyers hadn't planned for.</p><p>My friend Dave, who picked up a Long Range AWD in March 2019, called me six months later completely baffled that he was already down to the wear indicators on his rears. He's an engineer, not someone who ignores maintenance. The car just doesn't warn you the way you'd expect, and tire rotation isn't emphasized in Tesla's service reminders the way it should be. I'd argue that's still one of the honest trade-offs Tesla's owners manual doesn't shout loudly enough about. For more on this, see <a href="../tesla-model-y-2020-launch-impact/">The Tesla Model Y Launch in 2020 Was More Than a New Car - It Was a Line in the Sand</a>.</p></div>
-<figure style="margin:30px 0"><img src="https://images.pexels.com/photos/37258265/pexels-photo-37258265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" loading="lazy" style="width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:8px;display:block"><figcaption style="font-size:11px;color:#6494c8;text-align:center;margin-top:6px">Photo by kreatedbyDaniel</figcaption></figure>
+<figure style="margin:30px 0"><img src="https://images.pexels.com/photos/37258265/pexels-photo-37258265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" loading="lazy" style="width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:8px;display:block"><figcaption style="font-size:11px;color:#c8945e;text-align:center;margin-top:6px">Photo by kreatedbyDaniel</figcaption></figure>
 <h2 class="cvg-h2">What the Competition Got Wrong Reading the Model 3's Success</h2>
 <div><p>The auto industry's response to the Model 3's 2019 numbers was, with a few exceptions, to announce future EVs. Lots of them. Most major OEMs either had a concept on a show stand or a press release with a launch date of 2021 or 2022. Very few of those cars arrived on time, and almost none of them launched with charging networks that could match what Tesla buyers already had. The industry read the Model 3's success as 'people want EVs' when the more precise reading was 'people want EVs that work as a total system.'</p><p>Ford's Mustang Mach-E was arguably the first serious competitive response, and it didn't arrive until late 2020. The Volkswagen ID.4 followed in 2021. Both are legitimately good cars. But both launched into a charging infrastructure gap that took years to close, and both required their buyers to plan in ways Model 3 owners simply didn't have to. You can see how that line extended forward into the Model Y's arrival and what it meant for the segment in the <a href='/tesla-model-y-2020-launch-impact/'>Model Y launch analysis from 2020, which draws a clear line in the sand for the whole industry</a>.</p><p>The companies that understood the lesson quickest were the ones watching actual ownership data, not just sales numbers. <a href='https://www.jdpower.com/business/press-releases/2019-us-electric-vehicle-experience-evx-ownership-study' target='_blank' rel='noopener'>J.D. Power's 2019 EV Experience Ownership Study</a> found that public charging problems were cited as the top pain point by EV owners outside the Tesla ecosystem, at a rate nearly three times higher than any other issue. Tesla owners cited software bugs far more often. That's a meaningful difference. Software bugs get patched over the air at 2 a.m. A broken CCS charger in a rural rest stop stays broken until someone dispatches a technician.</p></div>
     <div class="cvg-verdict"><p>If you're buying a used 2019 Model 3 today, pull the full service history and check the tire wear pattern on all four corners before you sign anything. Rear-heavy wear is common and tells you whether the previous owner rotated properly. Beyond that, the cars hold up well mechanically. The battery degradation data from 2019 builds is encouraging, typically around 5 to 8 percent capacity loss after 100,000 miles based on community data from <a href='https://www.teslamotorsclub.com' target='_blank' rel='noopener'>Tesla Motors Club</a>. You'll get a lot of car for the price. Just budget for tires.</p></div>
-    <div style="margin-top:40px;padding-top:24px;border-top:1px solid #0e2040">
-<h2 style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#9ab8d8;margin-bottom:12px">Sources</h2>
-<ul style="list-style:none;padding:0;margin:0"><li style="margin-bottom:6px"><a href="https://www.iea.org/reports/global-ev-outlook-2020" target="_blank" rel="noopener" style="color:#5b9dff;text-decoration:none;font-size:13px">IEA Global EV Outlook 2020</a></li><li style="margin-bottom:6px"><a href="https://www.tesla.com/supercharger" target="_blank" rel="noopener" style="color:#5b9dff;text-decoration:none;font-size:13px">Tesla Supercharger Network</a></li><li style="margin-bottom:6px"><a href="https://www.energy.gov/eere/vehicles/articles/fotw-1040-june-3-2019-average-annual-energy-cost-electric-vehicles-lower" target="_blank" rel="noopener" style="color:#5b9dff;text-decoration:none;font-size:13px">US DOE Fuel Cost Analysis 2019</a></li><li style="margin-bottom:6px"><a href="https://www.jdpower.com/business/press-releases/2019-us-electric-vehicle-experience-evx-ownership-study" target="_blank" rel="noopener" style="color:#5b9dff;text-decoration:none;font-size:13px">J.D. Power 2019 EV Experience Ownership Study</a></li><li style="margin-bottom:6px"><a href="https://www.teslamotorsclub.com" target="_blank" rel="noopener" style="color:#5b9dff;text-decoration:none;font-size:13px">Tesla Motors Club Community Data</a></li></ul>
+    <div style="margin-top:40px;padding-top:24px;border-top:1px solid #221813">
+<h2 style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#d6b48e;margin-bottom:12px">Sources</h2>
+<ul style="list-style:none;padding:0;margin:0"><li style="margin-bottom:6px"><a href="https://www.iea.org/reports/global-ev-outlook-2020" target="_blank" rel="noopener" style="color:#ff7a1a;text-decoration:none;font-size:13px">IEA Global EV Outlook 2020</a></li><li style="margin-bottom:6px"><a href="https://www.tesla.com/supercharger" target="_blank" rel="noopener" style="color:#ff7a1a;text-decoration:none;font-size:13px">Tesla Supercharger Network</a></li><li style="margin-bottom:6px"><a href="https://www.energy.gov/eere/vehicles/articles/fotw-1040-june-3-2019-average-annual-energy-cost-electric-vehicles-lower" target="_blank" rel="noopener" style="color:#ff7a1a;text-decoration:none;font-size:13px">US DOE Fuel Cost Analysis 2019</a></li><li style="margin-bottom:6px"><a href="https://www.jdpower.com/business/press-releases/2019-us-electric-vehicle-experience-evx-ownership-study" target="_blank" rel="noopener" style="color:#ff7a1a;text-decoration:none;font-size:13px">J.D. Power 2019 EV Experience Ownership Study</a></li><li style="margin-bottom:6px"><a href="https://www.teslamotorsclub.com" target="_blank" rel="noopener" style="color:#ff7a1a;text-decoration:none;font-size:13px">Tesla Motors Club Community Data</a></li></ul>
 </div>
   </div>
   <section class="cvg-disc" id="cvg-discussion"><div class="cvg-disc-head"><span class="cvg-disc-k">Garage talk</span><span class="cvg-pill" id="cvg-cc">0</span></div><div id="cvg-list"></div><form class="cvg-form" id="cvg-form"><div class="cvg-form-k">Pull up and weigh in</div><input class="cvg-in" id="cvg-name" placeholder="Your name" maxlength="40"><textarea class="cvg-ta" id="cvg-msg" placeholder="Share your take, data or counterpoint" maxlength="800"></textarea><button class="cvg-btn" type="submit">Post comment</button></form></section><script>(function(){var L=document.getElementById('cvg-list'),CC=document.getElementById('cvg-cc'),F=document.getElementById('cvg-form');if(!L)return;var KEY='cvgc:'+location.pathname;function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];});}function ini(n){n=String(n||'').trim();if(!n)return'R';var p=n.split(/\s+/);return((p[0][0]||'')+(p[1]?p[1][0]:'')).toUpperCase();}function row(c){return '<div class="cvg-cm"><div class="cvg-cm-av">'+esc(ini(c.name))+'</div><div style="min-width:0"><div class="cvg-cm-top"><span class="cvg-cm-n">'+esc(c.name||'Reader')+'</span><span class="cvg-cm-d">'+esc(c.date_display||c.date_iso||'')+'</span></div><p class="cvg-cm-t">'+esc(c.text||'')+'</p></div></div>';}function render(a){L.innerHTML=a.length?a.map(row).join(''):'<div class="cvg-empty">No comments yet. Be the first to weigh in.</div>';if(CC)CC.textContent=a.length;}var mine=[];try{mine=JSON.parse(localStorage.getItem(KEY))||[];}catch(e){}var seed=[];fetch('./comments.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():[];}).then(function(j){seed=Array.isArray(j)?j:[];render(seed.concat(mine));}).catch(function(){render(mine);});if(F)F.addEventListener('submit',function(e){e.preventDefault();var n=document.getElementById('cvg-name').value.trim(),m=document.getElementById('cvg-msg').value.trim();if(!m)return;mine.push({name:n||'Reader',text:m,date_display:'just now'});try{localStorage.setItem(KEY,JSON.stringify(mine));}catch(e){}render(seed.concat(mine));F.reset();});})();</script>
@@ -445,7 +445,7 @@ L.innerHTML=a.map(function(p){return '<a class="cvg-lat" href="../'+encodeURICom
 }).catch(function(){});
 })();</script>
   </aside>
-</div></div></div><section style="max-width:720px;margin:48px auto 0;padding:0 24px"><h2 style="font-size:24px;font-weight:700;color:#e0eeff;margin:0 0 18px">Frequently asked questions</h2><details style="border:1px solid #0e2040;border-radius:10px;padding:2px 18px;margin-bottom:10px"><summary style="cursor:pointer;font-weight:700;color:#e0eeff;padding:15px 0;font-size:16px;list-style:none">How reliable was the 2019 Tesla Model 3 in real ownership?</summary><p style="color:#6494c8;margin:0 0 16px;font-size:15px;line-height:1.65">Generally solid mechanically, but early 2019 builds had some panel fit and trim quality issues. Software updates resolved many early bugs over-the-air. The drivetrain itself proved durable, with relatively low reported failure rates compared to traditional compact sedans.</p></details><details style="border:1px solid #0e2040;border-radius:10px;padding:2px 18px;margin-bottom:10px"><summary style="cursor:pointer;font-weight:700;color:#e0eeff;padding:15px 0;font-size:16px;list-style:none">What was the real range of the 2019 Model 3 Long Range?</summary><p style="color:#6494c8;margin:0 0 16px;font-size:15px;line-height:1.65">Tesla rated the 2019 Long Range AWD at 310 miles EPA. Real-world highway range at 70 mph in moderate temperatures typically came in between 260 and 285 miles, which was still comfortably ahead of any other non-Tesla EV available that year.</p></details><details style="border:1px solid #0e2040;border-radius:10px;padding:2px 18px;margin-bottom:10px"><summary style="cursor:pointer;font-weight:700;color:#e0eeff;padding:15px 0;font-size:16px;list-style:none">Could a 2019 Model 3 owner use non-Tesla chargers?</summary><p style="color:#6494c8;margin:0 0 16px;font-size:15px;line-height:1.65">Yes, with a CHAdeMO or CCS adapter, though Tesla's own CHAdeMO adapter was the main option in 2019 and added cost. Most Model 3 owners in 2019 relied almost entirely on Tesla's Supercharger network for fast charging because the third-party DC fast charging infrastructure was still sparse and unreliable by comparison.</p></details></section></article>
+</div></div></div><section style="max-width:720px;margin:48px auto 0;padding:0 24px"><h2 style="font-size:24px;font-weight:700;color:#f0ece6;margin:0 0 18px">Frequently asked questions</h2><details style="border:1px solid #221813;border-radius:10px;padding:2px 18px;margin-bottom:10px"><summary style="cursor:pointer;font-weight:700;color:#f0ece6;padding:15px 0;font-size:16px;list-style:none">How reliable was the 2019 Tesla Model 3 in real ownership?</summary><p style="color:#c8945e;margin:0 0 16px;font-size:15px;line-height:1.65">Generally solid mechanically, but early 2019 builds had some panel fit and trim quality issues. Software updates resolved many early bugs over-the-air. The drivetrain itself proved durable, with relatively low reported failure rates compared to traditional compact sedans.</p></details><details style="border:1px solid #221813;border-radius:10px;padding:2px 18px;margin-bottom:10px"><summary style="cursor:pointer;font-weight:700;color:#f0ece6;padding:15px 0;font-size:16px;list-style:none">What was the real range of the 2019 Model 3 Long Range?</summary><p style="color:#c8945e;margin:0 0 16px;font-size:15px;line-height:1.65">Tesla rated the 2019 Long Range AWD at 310 miles EPA. Real-world highway range at 70 mph in moderate temperatures typically came in between 260 and 285 miles, which was still comfortably ahead of any other non-Tesla EV available that year.</p></details><details style="border:1px solid #221813;border-radius:10px;padding:2px 18px;margin-bottom:10px"><summary style="cursor:pointer;font-weight:700;color:#f0ece6;padding:15px 0;font-size:16px;list-style:none">Could a 2019 Model 3 owner use non-Tesla chargers?</summary><p style="color:#c8945e;margin:0 0 16px;font-size:15px;line-height:1.65">Yes, with a CHAdeMO or CCS adapter, though Tesla's own CHAdeMO adapter was the main option in 2019 and added cost. Most Model 3 owners in 2019 relied almost entirely on Tesla's Supercharger network for fast charging because the third-party DC fast charging infrastructure was still sparse and unreliable by comparison.</p></details></section></article>
 <div style="background:rgba(0,0,0,.03);padding:8px 24px;text-align:center;border-bottom:1px solid rgba(0,0,0,.06)"><a href="../articles" style="display:inline-block;color:currentColor;text-decoration:none;font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.32em;text-transform:uppercase;opacity:.7">All writing &rarr;</a></div>
 <footer>
   <div class="footer-inner">
