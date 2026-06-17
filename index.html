@@ -556,7 +556,7 @@ document.querySelectorAll('.qchips button').forEach(b=>b.addEventListener('click
 apply();
 
 /* tickers */
-const T=['Tesla','EV vs ICE','Charging','BMW i8','Ford','Battery Tech','Range Anxiety','NACS','Performance','Ownership'];
+const T=['Independent reviews','No sponsored takes','Driven, not specced','Real-world range','Charging, explained','True cost of ownership','Engineering, decoded','EV and combustion','Honest car writing','Plug in or fill up'];
 document.getElementById('track').innerHTML=(()=>{const h=T.map(w=>`<b>${w}</b><span class="dot"></span>`).join('');return h+h;})();
 const inv=POSTS.map(p=>`<b>${p.dl} ${p.t.slice(0,42)}${p.t.length>42?'…':''}<u>Read</u></b><span class="d2"></span>`).join('');
 document.getElementById('invtrack').innerHTML=inv+inv;
