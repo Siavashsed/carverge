@@ -206,17 +206,6 @@ section{position:relative;padding:clamp(48px,7vh,80px) clamp(18px,4vw,56px)}
 .card:hover .go svg{color:#0a0a0a}
 .card a.cardlink{position:absolute;inset:0;z-index:4}
 .empty{grid-column:1/-1;text-align:center;color:var(--ink-dim);font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:60px 0}
-.datagrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
-.dcard{border:1px solid var(--line);border-radius:16px;padding:20px;background:linear-gradient(180deg,rgba(20,19,26,.5),rgba(9,8,12,.6));transition:border-color .4s var(--ease),opacity .4s}
-.dcard:hover{border-color:rgba(255,122,26,.45)}
-.dcard.off{opacity:.6}
-.dc-api{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);display:flex;align-items:center;gap:8px;margin-bottom:14px}
-.dc-api i{font-style:normal;font-size:8px;padding:2px 7px;border-radius:20px;border:1px solid var(--line-2);color:var(--ink-dim);letter-spacing:.1em}
-.dc-api i.free{color:var(--good);border-color:rgba(127,185,138,.4)}
-.dc-api i.key{color:#d8a24a;border-color:rgba(216,162,74,.4)}
-.dc-val{font-family:var(--serif);font-weight:700;font-size:32px;letter-spacing:-.02em;line-height:1;color:var(--ink);min-height:32px}
-.dc-label{font-size:13px;color:var(--ink-soft);margin-top:10px;line-height:1.4}
-.dc-note{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;color:var(--ink-dim);margin-top:8px;text-transform:uppercase}
 .loadmore-wrap{display:flex;justify-content:center;margin-top:40px}
 .loadmore{display:inline-flex;align-items:center;gap:11px;cursor:pointer;background:transparent;border:1px solid var(--line-2);color:var(--ink);font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:16px 32px;border-radius:46px;transition:all .4s var(--ease)}
 .loadmore:hover{background:var(--orange);color:#0a0a0a;border-color:var(--orange)}
@@ -224,8 +213,8 @@ section{position:relative;padding:clamp(48px,7vh,80px) clamp(18px,4vw,56px)}
 
 /* VIDEO BAND */
 #reviews{padding-top:10px;padding-bottom:24px}
-.vidband{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:3/2;max-height:560px;display:flex;align-items:flex-end;border:1px solid var(--line);background:#0a0708}
-@media (min-width:760px){#reviews{padding-left:0;padding-right:0}.vidband{aspect-ratio:16/7;max-height:620px;border-radius:0;border-left:none;border-right:none}.vidband-copy{padding-left:clamp(40px,7vw,110px)}}
+.vidband{position:relative;border-radius:24px;overflow:hidden;min-height:clamp(360px,74vw,480px);display:flex;align-items:flex-end;border:1px solid var(--line);background:#0a0708}
+@media (min-width:760px){#reviews{padding-left:0;padding-right:0}.vidband{min-height:clamp(420px,46vw,560px);border-radius:0;border-left:none;border-right:none}.vidband-copy{padding-left:clamp(40px,7vw,110px)}}
 .vidband video,.vidband .vidgl{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .vidband-tint{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,6,9,.88),rgba(7,6,9,.4) 55%,rgba(7,6,9,.1)),linear-gradient(0deg,rgba(7,6,9,.85),transparent 55%)}
 .vidband-copy{position:relative;z-index:2;padding:clamp(28px,5vw,62px);max-width:min(660px,90%)}
@@ -252,7 +241,8 @@ section{position:relative;padding:clamp(48px,7vh,80px) clamp(18px,4vw,56px)}
 
 /* NEWSLETTER + FOOTER */
 .news{position:relative;overflow:hidden;border-top:1px solid var(--line);text-align:center}
-.news-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:blur(7px) saturate(1.05);transform:scale(1.08)}
+.news-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:blur(4px) saturate(1.05);transform:scale(1.05)}
+@media (max-width:600px){.news-vid{filter:blur(2px) saturate(1.05);transform:scale(1.03)}}
 .news::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(8,7,10,.9),rgba(8,7,10,.76) 40%,rgba(8,7,10,.9))}
 .news>.reveal{position:relative;z-index:2}
 .news h2{font-family:var(--serif);font-weight:700;font-size:clamp(28px,4.4vw,52px);letter-spacing:-.03em;line-height:1.05;max-width:18ch;margin:0 auto}
@@ -411,18 +401,6 @@ footer{border-top:1px solid var(--line);padding:50px clamp(18px,4vw,56px);positi
     <div class="filters reveal d1" id="filters"></div>
     <div class="grid" id="grid"></div>
     <div class="loadmore-wrap" id="loadmoreWrap"></div>
-  </section>
-
-  <!-- LIVE DATA LAB -->
-  <section id="data">
-    <div class="shead reveal">
-      <div>
-        <div class="eyebrow">Live data lab</div>
-        <h2>APIs <em>on tap.</em><br/>Pick what stays.</h2>
-      </div>
-      <p>Each card is a live automotive data API, proxied through CarVerge. Tell me which feeds to keep and which to cut.</p>
-    </div>
-    <div class="datagrid reveal d1" id="datagrid"></div>
   </section>
 
   <!-- REVIEWS band -->
@@ -676,24 +654,6 @@ if(!isTouch){
   setTimeout(end,1150);
   function end(){if(fin)return;fin=true;setTimeout(()=>{pl.classList.add('done');setTimeout(()=>{pl.parentNode&&pl.parentNode.removeChild(pl);},780);},110);}
   setTimeout(end,2200);
-})();
-
-/* live data lab — fetch each automotive API via the kavalsia proxy */
-(function(){
-  const dg=document.getElementById('datagrid'); if(!dg)return;
-  const API_BASE='https://siavashsed.github.io/carverge/api.php';
-  const SRCS=['recalls','makes','mpg','nrel','chargers','prices','specs'];
-  dg.innerHTML=SRCS.map((s,i)=>`<div class="dcard off" id="dc${i}"><div class="dc-api">${s}</div><div class="dc-val">…</div><div class="dc-label">Loading…</div><div class="dc-note"></div></div>`).join('');
-  SRCS.forEach((s,i)=>{
-    fetch(API_BASE+'?src='+s).then(r=>r.json()).then(d=>{
-      const el=document.getElementById('dc'+i); if(!el)return;
-      if(!d.ok){ el.remove(); return; }
-      el.classList.remove('off');
-      const v=d.value; const vs=(v==null||v==='')?'—':(typeof v==='number'?v.toLocaleString():(String(v).match(/^\d+$/)?(+v).toLocaleString():v));
-      el.innerHTML='<div class="dc-api">'+(d.api||s)+(d.free?'<i class="free">free</i>':'<i class="key">key</i>')+'</div>'
-        +'<div class="dc-val">'+vs+'</div><div class="dc-label">'+(d.label||'')+'</div><div class="dc-note">'+(d.sub||'')+'</div>';
-    }).catch(()=>{const el=document.getElementById('dc'+i);if(el)el.remove();});
-  });
 })();
 
 /* brand logos */
