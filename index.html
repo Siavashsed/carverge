@@ -100,7 +100,7 @@ section{position:relative;padding:clamp(48px,7vh,80px) clamp(18px,4vw,56px)}
 /* HERO */
 .hero{position:relative;min-height:90vh;min-height:90svh;display:flex;flex-direction:column;justify-content:flex-end;padding-top:120px;padding-bottom:42px;overflow:hidden}
 .hero-video{position:absolute;inset:0;z-index:0}
-.hero-video video{width:100%;height:100%;object-fit:cover;object-position:center 38%;filter:blur(7px) saturate(1.06) contrast(1.04);transform:scale(1.08)}
+.hero-video video{width:100%;height:100%;object-fit:cover;object-position:center 38%;filter:saturate(1.06) contrast(1.05)}
 .hero-video::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.1);pointer-events:none}
 .hero-tint{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,6,9,.96) 0%,rgba(7,6,9,.78) 28%,rgba(7,6,9,.32) 58%,rgba(7,6,9,0) 88%),linear-gradient(180deg,rgba(6,5,8,.7) 0%,rgba(6,5,8,.3) 10%,rgba(6,5,8,0) 28%,rgba(7,6,9,.5) 68%,rgba(7,6,9,.95) 100%)}
 .invticker{position:absolute;top:70px;left:0;right:0;z-index:3;overflow:hidden;white-space:nowrap;background:rgba(7,7,11,.62);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:8px 0;box-shadow:0 10px 26px -16px rgba(0,0,0,.8)}
@@ -332,7 +332,7 @@ footer{border-top:1px solid var(--line);padding:50px clamp(18px,4vw,56px);positi
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero-video">
-      <video autoplay muted loop playsinline preload="auto" poster="assets/poster.png?v=2" src="https://kavalsia.com/carverge/assets/hero.mov?v=2"></video>
+      <video autoplay muted loop playsinline preload="auto" poster="assets/clip-poster.png" src="https://kavalsia.com/carverge/assets/clip.mov"></video>
       <div class="hero-tint"></div>
     </div>
     <div class="invticker" aria-hidden="true"><div class="invtrack" id="invtrack"></div></div>
@@ -429,7 +429,7 @@ footer{border-top:1px solid var(--line);padding:50px clamp(18px,4vw,56px);positi
 
   <!-- NEWSLETTER -->
   <section class="news" id="subscribe">
-    <video class="news-vid" autoplay muted loop playsinline preload="metadata" poster="assets/clip-poster.png" src="https://kavalsia.com/carverge/assets/clip.mov"></video>
+    <video class="news-vid" autoplay muted loop playsinline preload="metadata" poster="assets/poster.png?v=2" src="https://kavalsia.com/carverge/assets/hero.mov?v=2"></video>
     <div class="reveal">
       <div class="eyebrow" style="justify-content:center">The CarVerge Brief</div>
       <h2>One sharp car story<br/>in your inbox, <em>weekly.</em></h2>
