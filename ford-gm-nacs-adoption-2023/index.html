@@ -373,7 +373,12 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 32p
 .cvg-in:focus,.cvg-ta:focus{border-color:#ff7a1a;box-shadow:0 0 0 3px rgba(96,165,250,.14)}
 .cvg-ta{min-height:94px;resize:vertical}
 .cvg-btn{align-self:flex-start;background:#ff7a1a;color:#0b0810;border:0;border-radius:11px;padding:12px 26px;font-family:system-ui,sans-serif;font-weight:800;font-size:13.5px;cursor:pointer;transition:filter .15s}
-.cvg-btn:hover{filter:brightness(1.08)}@media(max-width:560px){.cvg-intro::first-letter{font-size:52px}.cvg-spec{grid-template-columns:1fr}}</style>
+.cvg-btn:hover{filter:brightness(1.08)}@media(max-width:560px){.cvg-intro::first-letter{font-size:52px}.cvg-spec{grid-template-columns:1fr}}
+/* === CV: header gap + no drop-cap (override) === */
+.cvg-wrap{padding-top:108px}
+@media(max-width:700px){.cvg-wrap{padding-top:92px}}
+.cvg-intro::first-letter{float:none;font-size:inherit;font-weight:inherit;padding:0;margin:0;color:inherit;line-height:inherit}
+</style>
 </head>
 <body data-page-depth="1">
 <!-- NAV -->
