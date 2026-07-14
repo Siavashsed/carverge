@@ -178,5 +178,43 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "What Three Years of EV Ownership Actually Cost Me",
+    "slug": "real-cost-ev-ownership-3-years",
+    "meta_description": "The real cost of EV ownership after 3 years, from depreciation to charging to a surprise repair, with honest numbers from an engineer who tracked it all.",
+    "date": "July 13, 2026",
+    "date_iso": "2026-07-13",
+    "author": "James Carr",
+    "image": "",
+    "outbound_links": [
+      "iseecars.com",
+      "consumerreports.org",
+      "newsroom.aaa.com"
+    ],
+    "posted_iso": "2026-07-13",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The New EV Tax Credit Just Broke Most of the Cars It Was Meant to Help",
+    "slug": "ev-tax-credit-2022-ira-rules",
+    "meta_description": "The 2022 EV tax credit overhaul from the Inflation Reduction Act changed the $7,500 rules overnight. Here's who still qualifies and who got shut out.",
+    "date": "July 10, 2022",
+    "date_iso": "2022-07-10",
+    "author": "James Carr",
+    "image": "",
+    "outbound_links": [
+      "afdc.energy.gov",
+      "reuters.com",
+      "coxautoinc.com",
+      "home.treasury.gov"
+    ],
+    "posted_iso": "2026-07-13",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
