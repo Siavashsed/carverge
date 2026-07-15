@@ -216,5 +216,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Hybrid, Full EV, or Gas: Your Driveway Decides More Than the Badge",
+    "slug": "hybrid-ev-gas-decision-framework",
+    "meta_description": "Choosing between hybrid, full EV, and gas comes down to two things most buyers ignore. Here is the honest decision framework I use.",
+    "date": "July 15, 2026",
+    "date_iso": "2026-07-15",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/9691973/pexels-photo-9691973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "afdc.energy.gov",
+      "consumerreports.org"
+    ],
+    "posted_iso": "2026-07-15",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
