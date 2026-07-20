@@ -233,5 +233,43 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Turbo Engine Is Dying From Oil You Chose Wrong",
+    "slug": "why-turbocharged-engines-fail-early",
+    "meta_description": "Modern turbocharged engines fail early for predictable reasons. Here is what actually kills them and the maintenance habits that keep yours alive past 200k.",
+    "date": "July 20, 2026",
+    "date_iso": "2026-07-20",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/8478225/pexels-photo-8478225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "epa.gov",
+      "api.org",
+      "jdpower.com"
+    ],
+    "posted_iso": "2026-07-20",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Ford Just Priced an Electric F-150 at $39,974 and Meant It",
+    "slug": "ford-f150-lightning-2021-reveal",
+    "meta_description": "The F-150 Lightning reveal put 563 hp, home backup power and a sub-$40k base price on the table. Here is what it actually changes for truck buyers.",
+    "date": "January 15, 2021",
+    "date_iso": "2021-01-15",
+    "author": "James Carr",
+    "image": "",
+    "outbound_links": [
+      "reuters.com",
+      "eia.gov",
+      "coxautoinc.com",
+      "ercot.com"
+    ],
+    "posted_iso": "2026-07-20",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
