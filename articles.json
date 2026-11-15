@@ -271,5 +271,41 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Oil Light Gives You Seconds. Most Other Warnings Give You Days",
+    "slug": "dashboard-warning-lights-act-now",
+    "meta_description": "Which dashboard warning lights mean stop now and which can wait. An automotive engineer explains the colors, the codes and the costly mistakes.",
+    "date": "November 15, 2026",
+    "date_iso": "2026-11-15",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/29382005/pexels-photo-29382005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "iso.org",
+      "nhtsa.gov"
+    ],
+    "posted_iso": "2026-11-15",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Hertz Dumped 20,000 EVs, and Used Buyers Got the Deal",
+    "slug": "hertz-sells-20000-evs-2024",
+    "meta_description": "Hertz sold 20,000 EVs in January 2024, citing repair costs and depreciation. An engineer explains what it really meant for used EV buyers.",
+    "date": "February 04, 2024",
+    "date_iso": "2024-02-04",
+    "author": "Fiona Walsh",
+    "image": "",
+    "outbound_links": [
+      "reuters.com",
+      "irs.gov",
+      "recurrentauto.com"
+    ],
+    "posted_iso": "2026-11-15",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
