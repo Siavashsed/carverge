@@ -307,5 +307,25 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your EV Probably Needs a 40-Amp Charger, Not a Panel Upgrade",
+    "slug": "home-ev-charging-level-1-vs-level-2",
+    "meta_description": "Level 1 vs Level 2 home EV charging, explained by an engineer: real install costs, amperage math, plug vs hardwire, and when a panel upgrade is a waste.",
+    "date": "November 16, 2026",
+    "date_iso": "2026-11-16",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/14078226/pexels-photo-14078226.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "energy.gov",
+      "afdc.energy.gov",
+      "eia.gov",
+      "irs.gov",
+      "nfpa.org"
+    ],
+    "posted_iso": "2026-11-16",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
