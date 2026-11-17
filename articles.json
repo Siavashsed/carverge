@@ -327,5 +327,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Winter Kills Your Battery First, So Start Your Car Prep There",
+    "slug": "prepare-car-for-winter-battery-first",
+    "meta_description": "An automotive engineer's plan to prepare your car for winter: battery testing, coolant, oil, tires and EV range, in the order that prevents breakdowns.",
+    "date": "November 17, 2026",
+    "date_iso": "2026-11-17",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/17753241/pexels-photo-17753241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "newsroom.aaa.com",
+      "ops.fhwa.dot.gov",
+      "nhtsa.gov"
+    ],
+    "posted_iso": "2026-11-17",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
