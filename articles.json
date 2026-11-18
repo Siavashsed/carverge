@@ -345,5 +345,25 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your EV Battery at 100,000 Miles Is Healthier Than You Think",
+    "slug": "ev-battery-degradation-100000-miles",
+    "meta_description": "EV battery degradation after 100,000 miles is usually 10 to 15 percent. An automotive engineer explains the data, the real risks, and what to check.",
+    "date": "November 18, 2026",
+    "date_iso": "2026-11-18",
+    "author": "James Carr",
+    "image": "",
+    "outbound_links": [
+      "geotab.com",
+      "tesla.com",
+      "nature.com",
+      "recurrentauto.com",
+      "afdc.energy.gov"
+    ],
+    "posted_iso": "2026-11-18",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
