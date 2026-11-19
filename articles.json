@@ -365,5 +365,25 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "EV Battery Degradation Runs About 2% a Year. Heat Decides the Rest",
+    "slug": "ev-battery-degradation-range-loss",
+    "meta_description": "EV battery degradation averages about 2% a year. An automotive engineer explains why heat matters more than fast charging and how to slow range loss.",
+    "date": "November 19, 2026",
+    "date_iso": "2026-11-19",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/37177072/pexels-photo-37177072.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "geotab.com",
+      "tesla.com",
+      "recurrentauto.com",
+      "nature.com",
+      "ww2.arb.ca.gov"
+    ],
+    "posted_iso": "2026-11-19",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
