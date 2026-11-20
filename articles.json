@@ -385,5 +385,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "EV Batteries Fade Slower Than Warranties Assume, So Stop Babying Yours",
+    "slug": "ev-battery-health-degradation-warranties",
+    "meta_description": "EV battery health explained: real degradation rates, what warranties cover, and the few charging habits that actually preserve your range.",
+    "date": "November 20, 2026",
+    "date_iso": "2026-11-20",
+    "author": "James Carr",
+    "image": "",
+    "outbound_links": [
+      "geotab.com",
+      "fueleconomy.gov",
+      "recurrentauto.com"
+    ],
+    "posted_iso": "2026-11-20",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
