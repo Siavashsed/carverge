@@ -403,5 +403,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "A Good Mechanic Will Talk You Out of Work",
+    "slug": "trustworthy-mechanic-avoid-repair-upsells",
+    "meta_description": "Finding a trustworthy mechanic comes down to credentials, written estimates and one cheap test job. Here's how to spot repair upsells before you pay.",
+    "date": "November 21, 2026",
+    "date_iso": "2026-11-21",
+    "author": "Ryan Scott",
+    "image": "https://images.pexels.com/photos/5835426/pexels-photo-5835426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ase.org",
+      "consumer.ftc.gov",
+      "fueleconomy.gov"
+    ],
+    "posted_iso": "2026-11-21",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
