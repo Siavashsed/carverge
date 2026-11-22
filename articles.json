@@ -421,5 +421,41 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Winter Tires Beat All-Wheel Drive, and One Icy Hill Proved It",
+    "slug": "winter-driving-car-care-prep",
+    "meta_description": "Winter driving and car care come down to tires, a healthy battery and slower hands. Here's what I test and fix every November before the first freeze.",
+    "date": "November 22, 2026",
+    "date_iso": "2026-11-22",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/35069866/pexels-photo-35069866.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ops.fhwa.dot.gov",
+      "nhtsa.gov",
+      "newsroom.aaa.com"
+    ],
+    "posted_iso": "2026-11-22",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "NHTSA Made Automatic Emergency Braking Mandatory, and 62 mph Is the Hard Part",
+    "slug": "nhtsa-automatic-emergency-braking-rule-2024",
+    "meta_description": "NHTSA's April 2024 rule requires automatic emergency braking on every new car by 2029. Here's what it demands, who pushed back, and what it means for you.",
+    "date": "August 23, 2024",
+    "date_iso": "2024-08-23",
+    "author": "Jake Morrison",
+    "image": "",
+    "outbound_links": [
+      "nhtsa.gov",
+      "iihs.org"
+    ],
+    "posted_iso": "2026-11-22",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
