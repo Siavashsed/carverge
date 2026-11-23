@@ -457,5 +457,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Pay a Mechanic $150 Before You Fall for Any Used Car",
+    "slug": "inspect-used-car-before-buying",
+    "meta_description": "Inspecting a used car before you buy it takes about 45 minutes of your own checks plus one independent mechanic. Here's what I look at and why.",
+    "date": "November 23, 2026",
+    "date_iso": "2026-11-23",
+    "author": "James Carr",
+    "image": "https://images.pexels.com/photos/7854069/pexels-photo-7854069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nicb.org",
+      "nhtsa.gov",
+      "ftc.gov"
+    ],
+    "posted_iso": "2026-11-23",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
