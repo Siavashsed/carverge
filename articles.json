@@ -475,5 +475,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Buy Used at Three Years Old, and Skip Most CPO Premiums",
+    "slug": "new-vs-used-vs-certified-buying-framework",
+    "meta_description": "New, used or certified pre-owned? A mechanical engineer's framework for picking by depreciation, warranty cost and reliability, not by sales pitch.",
+    "date": "November 24, 2026",
+    "date_iso": "2026-11-24",
+    "author": "Aurora Bennett",
+    "image": "https://images.pexels.com/photos/36729882/pexels-photo-36729882.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "edmunds.com",
+      "kbb.com",
+      "nhtsa.gov",
+      "consumerreports.org"
+    ],
+    "posted_iso": "2026-11-24",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
