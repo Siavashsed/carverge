@@ -494,5 +494,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Depreciation Eats Your Wallet Faster Than Gas Ever Will",
+    "slug": "real-cost-car-ownership-breakdown",
+    "meta_description": "The real cost of car ownership is about $12,300 a year. Here's where depreciation, insurance, fuel and repairs actually hit you, and what to do.",
+    "date": "November 25, 2026",
+    "date_iso": "2026-11-25",
+    "author": "Aurora Bennett",
+    "image": "https://images.pexels.com/photos/6927341/pexels-photo-6927341.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "newsroom.aaa.com",
+      "iseecars.com",
+      "bls.gov",
+      "iii.org"
+    ],
+    "posted_iso": "2026-11-25",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
