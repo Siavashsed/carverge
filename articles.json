@@ -513,5 +513,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Five DIY Maintenance Jobs That Cut Your Shop Bill by Hundreds",
+    "slug": "diy-maintenance-cut-shop-bills",
+    "meta_description": "DIY maintenance that actually saves money: filters, wipers, tire care and fluid checks, plus the jobs you should leave to a shop.",
+    "date": "November 26, 2026",
+    "date_iso": "2026-11-26",
+    "author": "Jake Morrison",
+    "image": "https://images.pexels.com/photos/28641471/pexels-photo-28641471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "newsroom.aaa.com",
+      "fueleconomy.gov",
+      "nhtsa.gov"
+    ],
+    "posted_iso": "2026-11-26",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
