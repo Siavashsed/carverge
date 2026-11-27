@@ -531,5 +531,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Maintenance Schedule Has Two Lists, and Only One Matters",
+    "slug": "read-maintenance-schedule-what-to-skip",
+    "meta_description": "Learn to read a car maintenance schedule: which items protect your engine and warranty, which are dealer upsells, and how to split the two.",
+    "date": "November 27, 2026",
+    "date_iso": "2026-11-27",
+    "author": "Fiona Walsh",
+    "image": "https://images.pexels.com/photos/5158154/pexels-photo-5158154.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fueleconomy.gov",
+      "newsroom.aaa.com",
+      "ftc.gov"
+    ],
+    "posted_iso": "2026-11-27",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
